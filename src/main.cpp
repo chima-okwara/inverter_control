@@ -1,4 +1,11 @@
-#include <Arduino.h>
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//*FILE NAME:       main.cpp
+//*FILE DESC:       Main source file for inverfer_control.
+//*FILE VERSION:    0.1.1
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
 #include <inverter.h>
 
 

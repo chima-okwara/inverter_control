@@ -1,12 +1,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//*FILE NAME:       inverter.cpp
-//*FILE DESC:       Source file for inverfer_control library.
+//*FILE NAME:       main.cpp
+//*FILE DESC:       Source file for Konvei.
 //*FILE VERSION:    0.1.1
-//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
-//*LAST MODIFIED:   Friday, 15 March, 2024
-//*LICENSE:         GNU LGPL v2.1
-////////////////////////////////////////////////////////////////////////////////////////////////////
-#include <Arduino.h>
+//*FILE CREATOR:    NorahLinks Technology
+//*LAST MODIFIED:   Friday, 8 February, 2024
+//*LICENSE:         Academic Free License
+////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
 #include <Buzzer.h>
 #include <inverter.h>
 
