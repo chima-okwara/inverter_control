@@ -1,21 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
-.pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
-                              /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (main)
-.pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
-                              .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (pinNametoDigitalPin)
-.pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                              (Reset_Handler)
-.pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
-                              .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (pinMode)
-.pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o) (serialEventRun())
-.pio/build/bluepill/libFrameworkArduino.a(board.c.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o) (init)
-.pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o) (g_anOutputPinConfigured)
+.pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+                              .pio/build/bluepill/src/main.cpp.o (setTimer())
 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o) (HardwareSerial::available())
+                              .pio/build/bluepill/src/main.cpp.o (Serial1)
+.pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                              .pio/build/bluepill/src/main.cpp.o (Print::println(char const*))
 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
                               .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o) (Stream::readBytes(char*, unsigned int))
 .pio/build/bluepill/libFrameworkArduino.a(WString.cpp.o)
@@ -24,22 +14,34 @@ Archive member included to satisfy reference by file (symbol)
                               .pio/build/bluepill/libFrameworkArduino.a(WString.cpp.o) (dtostrf)
 .pio/build/bluepill/libFrameworkArduino.a(itoa.c.o)
                               .pio/build/bluepill/libFrameworkArduino.a(WString.cpp.o) (ltoa)
+.pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+                              /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (main)
+.pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+                              .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (pinNametoDigitalPin)
+.pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                              (Reset_Handler)
+.pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+                              .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (pinMode)
 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
                               .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o) (millis)
-.pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o) (Print::write(unsigned char const*, unsigned int))
+.pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+                              .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o) (serialEventRun())
+.pio/build/bluepill/libFrameworkArduino.a(board.c.o)
+                              .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o) (init)
 .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
                               .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o) (yield)
+.pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+                              .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o) (g_anOutputPinConfigured)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
                               .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (__aeabi_dmul)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o) (__aeabi_fmul)
+                              .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o) (__aeabi_fmul)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(dtostrf.c.o) (__aeabi_dsub)
+                              .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o) (__aeabi_dsub)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
                               .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o (__aeabi_ddiv)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(dtostrf.c.o) (__aeabi_dcmplt)
+                              .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o) (__aeabi_dcmplt)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
                               .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o) (__aeabi_dcmpun)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
@@ -169,7 +171,7 @@ Archive member included to satisfy reference by file (symbol)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
                               .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o) (memcpy)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
-                              .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o) (strlen)
+                              .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o) (strlen)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libm_a-s_nan.o)
                               /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strtod.o) (nan)
 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libm_a-sf_nan.o)
@@ -257,12 +259,6 @@ Discarded input sections
                 0x00000000       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
  .rodata.PinMap_SPI_MOSI
                 0x00000000       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
- .rodata.PinMap_UART_CTS
-                0x00000000       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
- .rodata.PinMap_UART_RTS
-                0x00000000       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
- .rodata.PinMap_TIM
-                0x00000000      0x1d4 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
  .rodata.PinMap_I2C_SCL
                 0x00000000       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
  .rodata.PinMap_I2C_SDA
@@ -278,8 +274,6 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
- .rodata.analogInputPin
-                0x00000000       0x28 .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
  .text          0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_generic.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_generic.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/FrameworkArduinoVariant/variant_generic.cpp.o
@@ -299,8 +293,6 @@ Discarded input sections
                 0x00000000       0x28 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
  .text.HAL_GetTickFreq
                 0x00000000        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
- .text.HAL_Delay
-                0x00000000       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
  .text.HAL_SuspendTick
                 0x00000000        0xe .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
  .text.HAL_ResumeTick
@@ -1175,14 +1167,8 @@ Discarded input sections
                 0x00000000        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
  .text.HAL_RCC_GetHCLKFreq
                 0x00000000        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
- .text.HAL_RCC_GetPCLK1Freq
-                0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
- .text.HAL_RCC_GetPCLK2Freq
-                0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
  .text.HAL_RCC_GetOscConfig
                 0x00000000       0x6c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
- .text.HAL_RCC_GetClockConfig
-                0x00000000       0x3c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
  .text.HAL_RCC_CSSCallback
                 0x00000000        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
  .text.HAL_RCC_NMI_IRQHandler
@@ -1523,8 +1509,6 @@ Discarded input sections
                 0x00000000        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_Base_DeInit
                 0x00000000       0x5e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_Base_Start
-                0x00000000       0x44 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_Base_Stop
                 0x00000000       0x28 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_Base_Start_IT
@@ -1597,8 +1581,6 @@ Discarded input sections
                 0x00000000       0x14 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_DMABurst_ReadStop
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_GenerateEvent
-                0x00000000       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_ConfigTI1Input
                 0x00000000       0x10 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_ReadCapturedValue
@@ -1655,10 +1637,6 @@ Discarded input sections
                 0x00000000       0x22 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_DMABurstState
                 0x00000000        0x6 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.TIM_Base_SetConfig
-                0x00000000       0x4c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_Base_Init
-                0x00000000       0x58 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_OC_Init
                 0x00000000       0x58 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_PWM_Init
@@ -1693,12 +1671,6 @@ Discarded input sections
                 0x00000000       0x4e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_SlaveConfigSynchro
                 0x00000000       0x4e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.TIM_CCxChannelCmd
-                0x00000000       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_OC_Start
-                0x00000000       0x90 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_PWM_Start
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_OC_Stop
                 0x00000000       0x74 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_PWM_Stop
@@ -1719,8 +1691,6 @@ Discarded input sections
                 0x00000000       0xc4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_PWM_Stop_DMA
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
- .text.HAL_TIM_IC_Start
-                0x00000000       0xc8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_IC_Stop
                 0x00000000       0x5e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
  .text.HAL_TIM_IC_Start_IT
@@ -1734,8 +1704,6 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
- .text.TIM_CCxNChannelCmd
-                0x00000000       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.TIM_DMAErrorCCxN
                 0x00000000       0x42 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.TIM_DMADelayPulseNCplt
@@ -1760,8 +1728,6 @@ Discarded input sections
                 0x00000000       0xa8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_HallSensor_Stop_DMA
                 0x00000000       0x4a .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
- .text.HAL_TIMEx_OCN_Start
-                0x00000000       0x8c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_OCN_Stop
                 0x00000000       0x6a .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_OCN_Start_IT
@@ -1772,8 +1738,6 @@ Discarded input sections
                 0x00000000      0x14c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_OCN_Stop_DMA
                 0x00000000       0xa8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
- .text.HAL_TIMEx_PWMN_Start
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_PWMN_Stop
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .text.HAL_TIMEx_PWMN_Start_IT
@@ -1823,16 +1787,8 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
- .text.UART_SetConfig
-                0x00000000       0x74 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .text.UART_WaitOnFlagUntilTimeout.constprop.0
                 0x00000000       0x6c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
- .text.HAL_UART_MspInit
-                0x00000000        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
- .text.HAL_UART_Init
-                0x00000000       0x5e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
- .text.HAL_HalfDuplex_Init
-                0x00000000       0x66 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .text.HAL_LIN_Init
                 0x00000000       0x78 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .text.HAL_MultiProcessor_Init
@@ -1956,26 +1912,12 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZNSt8functionIFvvEEaSEDn.isra.0
-                0x00000000       0x16 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._gettimeofday
                 0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer5pauseEv
                 0x00000000       0x62 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer10getChannelEm
-                0x00000000       0x10 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer12getLLChannelEm
-                0x00000000       0x28 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer5getITEm
-                0x00000000       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer20getAssociatedChannelEm
-                0x00000000       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer12pauseChannelEm
                 0x00000000       0xb6 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer13resumeChannelEm
-                0x00000000       0xf4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer6resumeEv
-                0x00000000       0x42 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer17getPrescaleFactorEv
                 0x00000000        0x8 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer7setModeEm12TimerModes_t7PinName20ChannelInputFilter_t
@@ -1996,30 +1938,14 @@ Discarded input sections
                 0x00000000        0xa .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer12hasInterruptEm
                 0x00000000       0x16 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer7refreshEv
-                0x00000000        0x8 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer9getHandleEv
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer9isRunningEv
-                0x00000000        0xa .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer16isRunningChannelEm
                 0x00000000       0x44 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer27updateRegistersIfNotRunningEP11TIM_TypeDef
-                0x00000000       0x3a .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer17setPrescaleFactorEm
                 0x00000000        0xc .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._Z15get_timer_indexP11TIM_TypeDef
-                0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimerD2Ev
-                0x00000000       0x40 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer5setupEP11TIM_TypeDef
-                0x00000000       0x90 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer15getTimerClkFreqEv
-                0x00000000       0x58 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer11getOverflowE13TimerFormat_t
                 0x00000000       0x68 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer11setOverflowEm13TimerFormat_t
-                0x00000000       0x4c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer8getCountE13TimerFormat_t
                 0x00000000       0x68 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer8setCountEm13TimerFormat_t
@@ -2030,32 +1956,14 @@ Discarded input sections
                 0x00000000       0xb0 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer17timerHandleDeinitEv
                 0x00000000       0x16 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZNSt8functionIFvvEEC2Ev
-                0x00000000        0xc .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimerC2Ev
                 0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimerC2EP11TIM_TypeDef
-                0x00000000       0x2a .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZNSt8functionIFvvEEC2ERKS1_
-                0x00000000       0x24 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZNSt8functionIFvvEEaSERKS1_.isra.0
-                0x00000000       0x42 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer15attachInterruptEmSt8functionIFvvEE
                 0x00000000       0x46 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZN13HardwareTimer15attachInterruptESt8functionIFvvEE
-                0x00000000       0x2e .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer6setPWMEm7PinNamemmSt8functionIFvvEES3_
                 0x00000000       0x78 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer6setPWMEmmmmSt8functionIFvvEES2_
                 0x00000000       0x8c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .rodata.CSWTCH.99
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .rodata.CSWTCH.97
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .rodata.CSWTCH.95
-                0x00000000        0x8 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
- .rodata.CSWTCH.94
-                0x00000000        0x6 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/LL/stm32yyxx_ll_adc.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/LL/stm32yyxx_ll_adc.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/LL/stm32yyxx_ll_adc.c.o
@@ -2441,25 +2349,13 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
- .text._Znwj    0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .text._Znaj    0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .text._ZdlPv   0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .text._ZdaPv   0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
- .text._ZdlPvj  0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .text._ZdaPvj  0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
- .comment       0x00000000       0x3a .pio/build/bluepill/SrcWrapper/src/new.cpp.o
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
- .text.set_GPIO_Port_Clock
-                0x00000000       0x88 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
- .data.GPIOPort
-                0x00000000       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
- .comment       0x00000000       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
@@ -2475,13 +2371,8 @@ Discarded input sections
                 0x00000000      0x100 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .text.pwm_start
                 0x00000000       0xa4 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
- .text.pwm_stop
-                0x00000000       0x5c .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .data._ZL13g_current_pin
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
- .comment       0x00000000       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/bootloader.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/bootloader.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/bootloader.c.o
@@ -2516,10 +2407,6 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
- .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
-                0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
- .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .text._ZNSt14_Function_baseD2Ev
                 0x00000000       0x12 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .text._Z23stm32_interrupt_disableP12GPIO_TypeDeft
@@ -2541,26 +2428,10 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.pin_SetF1AFPin
-                0x00000000      0x190 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.LL_GPIO_SetPinMode
-                0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.LL_GPIO_SetPinOutputType
-                0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.pin_in_pinmap
-                0x00000000       0x1e .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.pin_function
-                0x00000000      0x18c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.pinmap_pinout
-                0x00000000       0x1a .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .text.pinmap_find_function
                 0x00000000       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .text.pinmap_function
                 0x00000000        0xa .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .text.pinmap_merge_peripheral
-                0x00000000       0x14 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
- .rodata.pin_map_ll
-                0x00000000       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/stm32_def.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/stm32_def.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/stm32_def.c.o
@@ -2572,56 +2443,34 @@ Discarded input sections
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
  .text.SystemCoreClockUpdate
                 0x00000000       0x54 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
- .rodata.APBPrescTable
-                0x00000000        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.enableTimerClock
-                0x00000000       0x68 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.HAL_TIM_IC_MspInit
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.disableTimerClock
-                0x00000000       0x48 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.HAL_TIM_IC_MspDeInit
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.getTimerUpIrq
-                0x00000000       0x30 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.getTimerCCIrq
-                0x00000000       0x30 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.HAL_TIM_Base_MspInit
-                0x00000000       0x4e .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.HAL_TIM_OC_MspInit
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.HAL_TIM_Base_MspDeInit
                 0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.HAL_TIM_OC_MspDeInit
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
- .text.getTimerClkSrc
-                0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text.getTimerChannel
                 0x00000000       0x20 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
- .text.uart_init.part.0
-                0x00000000      0x180 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text._gettimeofday
                 0x00000000       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text.get_serial_obj
                 0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
- .text.uart_init
-                0x00000000       0x12 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text.uart_deinit
                 0x00000000       0x74 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text.uart_debug_init
                 0x00000000       0x34 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text.uart_debug_write
                 0x00000000       0xc4 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
- .text.uart_getc
-                0x00000000       0x38 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
- .text.uart_attach_rx_callback
-                0x00000000       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .text.HAL_UARTEx_WakeupCallback
                 0x00000000        0xa .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .data.serial_debug
@@ -2629,104 +2478,31 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .data          0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .bss           0x00000000        0x0 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
- .text._sbrk    0x00000000       0x3c .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text._close   0x00000000        0x6 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text._fstat   0x00000000        0xa .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text._isatty  0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text._lseek   0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text._read    0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
- .data.heap_end.0
-                0x00000000        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .text          0x00000000        0x0 .pio/build/bluepill/src/main.cpp.o
  .data          0x00000000        0x0 .pio/build/bluepill/src/main.cpp.o
  .bss           0x00000000        0x0 .pio/build/bluepill/src/main.cpp.o
  .text._gettimeofday
                 0x00000000       0x2c .pio/build/bluepill/src/main.cpp.o
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .group         0x00000000        0x8 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .group         0x00000000        0x8 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
+                0x00000000       0x20 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
+                0x00000000        0x4 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
  .text._gettimeofday
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .text.pinNametoDigitalPin
-                0x00000000       0x30 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .text.analogInputToPinName
-                0x00000000       0x80 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .text.digitalpinIsAnalogInput
-                0x00000000       0x28 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .text.digitalPinToAnalogInput
-                0x00000000       0x38 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
- .text          0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text._gettimeofday
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text.pinMode  0x00000000       0xbc .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text.digitalWrite
-                0x00000000       0x78 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text.digitalRead
-                0x00000000       0x70 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text.digitalToggle
-                0x00000000       0x74 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.mapResolution
-                0x00000000       0x26 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text._gettimeofday
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogReadResolution
-                0x00000000       0x1c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogWriteResolution
-                0x00000000       0x20 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogWriteFrequency
-                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogReference
-                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogRead
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogOutputInit
-                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .text.analogWrite
-                0x00000000       0xdc .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data._writeFreq
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data._internalWriteResolution
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data._writeResolution
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data._internalReadResolution
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .data._readResolution
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .bss.g_anOutputPinConfigured
-                0x00000000       0x10 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+                0x00000000       0x2c .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
  .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
- .text._ZN14HardwareSerial16_rx_complete_irqEP8serial_s
-                0x00000000       0x36 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text._gettimeofday
                 0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text._ZN14HardwareSerialC2Emmmm
@@ -2765,10 +2541,95 @@ Discarded input sections
                 0x00000000        0xa .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text._ZNK14HardwareSerial12isHalfDuplexEv
                 0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
- .text._ZN14HardwareSerial5beginEmh
-                0x00000000       0x84 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
- .rodata.CSWTCH.73
-                0x00000000        0x5 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+ .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5writeEPKhj
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._gettimeofday
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEPK19__FlashStringHelper
+                0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printERK6String
+                0x00000000        0xa .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEPKc
+                0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEc
+                0x00000000        0x6 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printERK9Printable
+                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnERK9Printable
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._write   0x00000000       0x22 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print6printfEPKcz
+                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print6printfEPK19__FlashStringHelperz
+                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7vprintfEPKcSt9__va_list
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7vprintfEPK19__FlashStringHelperSt9__va_list
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print11printNumberEmh
+                0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEli
+                0x00000000       0x44 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEii
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEmi
+                0x00000000       0x16 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEji
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print14printULLNumberEyh
+                0x00000000       0xce .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printExi
+                0x00000000       0x52 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnExi
+                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEyi
+                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEyi
+                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .rodata._ZN5Print10printFloatIfEEjT_h.str1.1
+                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print10printFloatIfEEjT_h
+                0x00000000      0x120 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEfi
+                0x00000000        0xa .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEfi
+                0x00000000       0x16 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print10printFloatIdEEjT_h
+                0x00000000      0x174 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print5printEdi
+                0x00000000       0x12 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000       0x1c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .rodata._ZTV5Print
+                0x00000000       0x18 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
  .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
  .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
  .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
@@ -3006,6 +2867,35 @@ Discarded input sections
  .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(itoa.c.o)
  .ARM.attributes
                 0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(itoa.c.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .text._gettimeofday
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .text.pinNametoDigitalPin
+                0x00000000       0x30 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .text.analogInputToPinName
+                0x00000000       0x80 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .text.digitalpinIsAnalogInput
+                0x00000000       0x28 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .text.digitalPinToAnalogInput
+                0x00000000       0x38 .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .ARM.attributes
+                0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(pins_arduino.c.o)
+ .text          0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+ .text._gettimeofday
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+ .text.digitalToggle
+                0x00000000       0x74 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
  .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
@@ -3013,108 +2903,12 @@ Discarded input sections
                 0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .text.micros   0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .text.delay    0x00000000       0x1c .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
- .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .group         0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .group         0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print17availableForWriteEv
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5flushEv
-                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5writeEPKhj
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._gettimeofday
-                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5writeEPKc
-                0x00000000       0x20 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEPK19__FlashStringHelper
-                0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printERK6String
-                0x00000000        0xa .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEPKc
-                0x00000000        0x8 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEc
-                0x00000000        0x6 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printERK9Printable
-                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .rodata._ZN5Print7printlnEv.str1.1
-                0x00000000        0x3 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEv
-                0x00000000       0x10 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEPK19__FlashStringHelper
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnERK6String
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEPKc
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEc
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnERK9Printable
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._write   0x00000000       0x22 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print6printfEPKcz
-                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print6printfEPK19__FlashStringHelperz
-                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7vprintfEPKcSt9__va_list
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7vprintfEPK19__FlashStringHelperSt9__va_list
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print11printNumberEmh
-                0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEli
-                0x00000000       0x44 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEii
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEii
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEli
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEmi
-                0x00000000       0x16 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEhi
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEhi
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEji
-                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEji
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEmi
-                0x00000000       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print14printULLNumberEyh
-                0x00000000       0xce .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printExi
-                0x00000000       0x52 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnExi
-                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEyi
-                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEyi
-                0x00000000       0x1a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .rodata._ZN5Print10printFloatIfEEjT_h.str1.1
-                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print10printFloatIfEEjT_h
-                0x00000000      0x120 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEfi
-                0x00000000        0xa .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEfi
-                0x00000000       0x16 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print10printFloatIdEEjT_h
-                0x00000000      0x174 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print5printEdi
-                0x00000000       0x12 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .text._ZN5Print7printlnEdi
-                0x00000000       0x1c .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .rodata._ZTV5Print
-                0x00000000       0x18 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
- .ARM.attributes
-                0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
  .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
  .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
  .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
@@ -3122,6 +2916,37 @@ Discarded input sections
  .comment       0x00000000       0x3a .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
  .ARM.attributes
                 0x00000000       0x2d .pio/build/bluepill/libFrameworkArduino.a(hooks.c.o)
+ .text          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data          0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .bss           0x00000000        0x0 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.mapResolution
+                0x00000000       0x26 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text._gettimeofday
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogReadResolution
+                0x00000000       0x1c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogWriteResolution
+                0x00000000       0x20 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogWriteFrequency
+                0x00000000        0xc .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogReference
+                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogRead
+                0x00000000       0x2c .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogOutputInit
+                0x00000000        0x2 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .text.analogWrite
+                0x00000000       0xdc .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data._writeFreq
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data._internalWriteResolution
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data._writeResolution
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data._internalReadResolution
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+ .data._readResolution
+                0x00000000        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
  .text          0x00000000      0x254 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
@@ -3396,35 +3221,12 @@ Discarded input sections
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
- .text.malloc   0x00000000       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
- .text.free     0x00000000       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .text.sbrk_aligned
-                0x00000000       0x44 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .text._malloc_r
-                0x00000000      0x100 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .bss.__malloc_sbrk_start
-                0x00000000        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .bss.__malloc_free_list
-                0x00000000        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
- .text.__malloc_lock
-                0x00000000        0xc /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
- .text.__malloc_unlock
-                0x00000000        0xc /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-realloc.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-realloc.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-realloc.o)
@@ -3707,10 +3509,6 @@ Discarded input sections
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
- .text._sbrk_r  0x00000000       0x20 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-writer.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-writer.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-writer.o)
@@ -3750,15 +3548,11 @@ Discarded input sections
                 0x00000000        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .text.__retarget_lock_acquire
                 0x00000000        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
- .text.__retarget_lock_acquire_recursive
-                0x00000000        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .text.__retarget_lock_try_acquire
                 0x00000000        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .text.__retarget_lock_try_acquire_recursive
                 0x00000000        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .text.__retarget_lock_release
-                0x00000000        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
- .text.__retarget_lock_release_recursive
                 0x00000000        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .bss.__lock___arc4random_mutex
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
@@ -3768,17 +3562,12 @@ Discarded input sections
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .bss.__lock___env_recursive_mutex
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
- .bss.__lock___malloc_recursive_mutex
-                0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .bss.__lock___at_quick_exit_mutex
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .bss.__lock___atexit_recursive_mutex
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .bss.__lock___sfp_recursive_mutex
                 0x00000000        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .text          0x00000000       0x14 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcmp.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcmp.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strcmp.o)
@@ -3796,14 +3585,10 @@ Discarded input sections
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
- .text          0x00000000       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
  .ARM.extab     0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
- .ARM.exidx     0x00000000        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
  .eh_frame      0x00000000       0x28 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
- .ARM.attributes
-                0x00000000       0x17 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libm_a-s_nan.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libm_a-s_nan.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libm_a-s_nan.o)
@@ -3844,10 +3629,6 @@ Discarded input sections
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
- .text._free_r  0x00000000       0x90 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
- .comment       0x00000000       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
- .ARM.attributes
-                0x00000000       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
  .text          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-gdtoa-gethex.o)
  .data          0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-gdtoa-gethex.o)
  .bss           0x00000000        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-gdtoa-gethex.o)
@@ -4135,499 +3916,787 @@ Linker script and memory map
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x0800010c     0x19c4
+.text           0x0800010c     0x31ec
                 0x0800010c                        . = ALIGN (0x4)
  *(.text)
+ .text          0x0800010c       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
+                0x0800010c                strlen
  *(.text*)
  .text.__do_global_dtors_aux
-                0x0800010c       0x24 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800011c       0x24 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.frame_dummy
-                0x08000130       0x1c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08000140       0x1c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  .text.SystemClock_Config
-                0x0800014c       0x7c .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
-                0x0800014c                SystemClock_Config
+                0x0800015c       0x7c .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
+                0x0800015c                SystemClock_Config
  .text.HAL_MspInit
-                0x080001c8        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x080001c8                HAL_MspInit
- *fill*         0x080001ca        0x2 
+                0x080001d8        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x080001d8                HAL_MspInit
+ *fill*         0x080001da        0x2 
  .text.HAL_InitTick
-                0x080001cc       0x48 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x080001cc                HAL_InitTick
+                0x080001dc       0x48 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x080001dc                HAL_InitTick
  .text.HAL_Init
-                0x08000214       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x08000214                HAL_Init
+                0x08000224       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x08000224                HAL_Init
  .text.HAL_IncTick
-                0x08000238       0x18 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x08000238                HAL_IncTick
+                0x08000248       0x18 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x08000248                HAL_IncTick
  .text.HAL_GetTick
-                0x08000250        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x08000250                HAL_GetTick
+                0x08000260        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x08000260                HAL_GetTick
+ .text.HAL_Delay
+                0x0800026c       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x0800026c                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0800025c       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x0800025c                HAL_NVIC_SetPriorityGrouping
+                0x08000290       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x08000290                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08000280       0x60 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x08000280                HAL_NVIC_SetPriority
+                0x080002b4       0x60 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x080002b4                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x080002e0       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x080002e0                HAL_NVIC_EnableIRQ
+                0x08000314       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x08000314                HAL_NVIC_EnableIRQ
  .text.HAL_NVIC_DisableIRQ
-                0x080002fc       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x080002fc                HAL_NVIC_DisableIRQ
+                0x08000330       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x08000330                HAL_NVIC_DisableIRQ
  .text.HAL_SYSTICK_Config
-                0x08000320       0x28 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x08000320                HAL_SYSTICK_Config
+                0x08000354       0x28 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x08000354                HAL_SYSTICK_Config
  .text.HAL_NVIC_ClearPendingIRQ
-                0x08000348       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x08000348                HAL_NVIC_ClearPendingIRQ
+                0x0800037c       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x0800037c                HAL_NVIC_ClearPendingIRQ
  .text.HAL_SYSTICK_Callback
-                0x08000364        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x08000364                HAL_SYSTICK_Callback
+                0x08000398        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x08000398                HAL_SYSTICK_Callback
  .text.HAL_SYSTICK_IRQHandler
-                0x08000366        0x8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
-                0x08000366                HAL_SYSTICK_IRQHandler
+                0x0800039a        0x8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_cortex.c.o
+                0x0800039a                HAL_SYSTICK_IRQHandler
  .text.HAL_CRC_MspInit
-                0x0800036e        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_crc.c.o
-                0x0800036e                HAL_CRC_MspInit
+                0x080003a2        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_crc.c.o
+                0x080003a2                HAL_CRC_MspInit
  .text.HAL_CRC_Init
-                0x08000370       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_crc.c.o
-                0x08000370                HAL_CRC_Init
+                0x080003a4       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_crc.c.o
+                0x080003a4                HAL_CRC_Init
  .text.HAL_DMA_Abort
-                0x08000390       0x3e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_dma.c.o
-                0x08000390                HAL_DMA_Abort
- *fill*         0x080003ce        0x2 
+                0x080003c4       0x3e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_dma.c.o
+                0x080003c4                HAL_DMA_Abort
+ *fill*         0x08000402        0x2 
  .text.HAL_DMA_Abort_IT
-                0x080003d0       0x8c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_dma.c.o
-                0x080003d0                HAL_DMA_Abort_IT
+                0x08000404       0x8c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_dma.c.o
+                0x08000404                HAL_DMA_Abort_IT
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x0800045c       0x18 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_gpio.c.o
-                0x0800045c                HAL_GPIO_EXTI_IRQHandler
+                0x08000490       0x18 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_gpio.c.o
+                0x08000490                HAL_GPIO_EXTI_IRQHandler
  .text.HAL_RCC_OscConfig
-                0x08000474      0x338 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
-                0x08000474                HAL_RCC_OscConfig
+                0x080004a8      0x338 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x080004a8                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x080007ac       0x4c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
-                0x080007ac                HAL_RCC_GetSysClockFreq
+                0x080007e0       0x4c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x080007e0                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x080007f8      0x138 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
-                0x080007f8                HAL_RCC_ClockConfig
+                0x0800082c      0x138 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x0800082c                HAL_RCC_ClockConfig
+ .text.HAL_RCC_GetPCLK1Freq
+                0x08000964       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x08000964                HAL_RCC_GetPCLK1Freq
+ .text.HAL_RCC_GetPCLK2Freq
+                0x08000984       0x20 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x08000984                HAL_RCC_GetPCLK2Freq
+ .text.HAL_RCC_GetClockConfig
+                0x080009a4       0x3c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x080009a4                HAL_RCC_GetClockConfig
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x08000930       0xf4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc_ex.c.o
-                0x08000930                HAL_RCCEx_PeriphCLKConfig
+                0x080009e0       0xf4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc_ex.c.o
+                0x080009e0                HAL_RCCEx_PeriphCLKConfig
+ .text.HAL_TIM_Base_Start
+                0x08000ad4       0x44 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000ad4                HAL_TIM_Base_Start
+ .text.HAL_TIM_GenerateEvent
+                0x08000b18       0x24 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000b18                HAL_TIM_GenerateEvent
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x08000a24        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
-                0x08000a24                HAL_TIM_PWM_PulseFinishedCallback
+                0x08000b3c        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000b3c                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x08000a26        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
-                0x08000a26                HAL_TIM_TriggerCallback
+                0x08000b3e        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000b3e                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x08000a28      0x144 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
-                0x08000a28                HAL_TIM_IRQHandler
+                0x08000b40      0x144 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000b40                HAL_TIM_IRQHandler
+ .text.TIM_Base_SetConfig
+                0x08000c84       0x4c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000c84                TIM_Base_SetConfig
+ .text.HAL_TIM_Base_Init
+                0x08000cd0       0x58 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000cd0                HAL_TIM_Base_Init
+ .text.TIM_CCxChannelCmd
+                0x08000d28       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000d28                TIM_CCxChannelCmd
+ .text.HAL_TIM_OC_Start
+                0x08000d44       0x90 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000d44                HAL_TIM_OC_Start
+ .text.HAL_TIM_PWM_Start
+                0x08000dd4        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000dd4                HAL_TIM_PWM_Start
+ .text.HAL_TIM_IC_Start
+                0x08000dd8       0xc8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim.c.o
+                0x08000dd8                HAL_TIM_IC_Start
+ .text.TIM_CCxNChannelCmd
+                0x08000ea0       0x1c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
+ .text.HAL_TIMEx_OCN_Start
+                0x08000ebc       0x8c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
+                0x08000ebc                HAL_TIMEx_OCN_Start
+ .text.HAL_TIMEx_PWMN_Start
+                0x08000f48        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
+                0x08000f48                HAL_TIMEx_PWMN_Start
  .text.HAL_TIMEx_CommutCallback
-                0x08000b6c        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
-                0x08000b6c                HAL_TIMEx_CommutCallback
+                0x08000f4c        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
+                0x08000f4c                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x08000b6e        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
-                0x08000b6e                HAL_TIMEx_BreakCallback
+                0x08000f4e        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
+                0x08000f4e                HAL_TIMEx_BreakCallback
  .text.UART_EndRxTransfer
-                0x08000b70       0x5c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08000f50       0x5c .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+ .text.UART_SetConfig
+                0x08000fac       0x74 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+ .text.HAL_UART_MspInit
+                0x08001020        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001020                HAL_UART_MspInit
+ .text.HAL_UART_Init
+                0x08001022       0x5e .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001022                HAL_UART_Init
+ .text.HAL_HalfDuplex_Init
+                0x08001080       0x66 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001080                HAL_HalfDuplex_Init
  .text.HAL_UART_Transmit_IT
-                0x08000bcc       0x32 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08000bcc                HAL_UART_Transmit_IT
+                0x080010e6       0x32 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x080010e6                HAL_UART_Transmit_IT
  .text.UART_DMAAbortOnError
-                0x08000bfe       0x10 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001118       0x10 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .text.HAL_UARTEx_RxEventCallback
-                0x08000c0e        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08000c0e                HAL_UARTEx_RxEventCallback
+                0x08001128        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001128                HAL_UARTEx_RxEventCallback
  .text.UART_Receive_IT.isra.0
-                0x08000c10       0xb6 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
- *fill*         0x08000cc6        0x2 
+                0x0800112a       0xb6 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .text.HAL_UART_IRQHandler
-                0x08000cc8      0x2d8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08000cc8                HAL_UART_IRQHandler
+                0x080011e0      0x2d8 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x080011e0                HAL_UART_IRQHandler
  .text.HAL_HalfDuplex_EnableTransmitter
-                0x08000fa0       0x30 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08000fa0                HAL_HalfDuplex_EnableTransmitter
+                0x080014b8       0x30 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x080014b8                HAL_HalfDuplex_EnableTransmitter
  .text.HAL_HalfDuplex_EnableReceiver
-                0x08000fd0       0x30 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08000fd0                HAL_HalfDuplex_EnableReceiver
+                0x080014e8       0x30 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x080014e8                HAL_HalfDuplex_EnableReceiver
  .text.HAL_UART_GetState
-                0x08001000        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x08001000                HAL_UART_GetState
+                0x08001518        0xc .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001518                HAL_UART_GetState
  .text.UART_Start_Receive_IT
-                0x0800100c       0x32 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x0800100c                UART_Start_Receive_IT
+                0x08001524       0x32 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001524                UART_Start_Receive_IT
  .text.HAL_UART_Receive_IT
-                0x0800103e       0x22 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
-                0x0800103e                HAL_UART_Receive_IT
+                0x08001556       0x22 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
+                0x08001556                HAL_UART_Receive_IT
+ .text._ZNSt8functionIFvvEEaSEDn.isra.0
+                0x08001578       0x16 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZNSt14_Function_baseD2Ev
-                0x08001060       0x12 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001060                std::_Function_base::~_Function_base()
-                0x08001060                std::_Function_base::~_Function_base()
- *fill*         0x08001072        0x2 
+                0x0800158e       0x12 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x0800158e                std::_Function_base::~_Function_base()
+                0x0800158e                std::_Function_base::~_Function_base()
+ .text._ZN13HardwareTimer10getChannelEm
+                0x080015a0       0x10 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080015a0                HardwareTimer::getChannel(unsigned long)
+ .text._ZN13HardwareTimer12getLLChannelEm
+                0x080015b0       0x28 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080015b0                HardwareTimer::getLLChannel(unsigned long)
+ .text._ZN13HardwareTimer5getITEm
+                0x080015d8       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080015d8                HardwareTimer::getIT(unsigned long)
+ .text._ZN13HardwareTimer20getAssociatedChannelEm
+                0x080015ec       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080015ec                HardwareTimer::getAssociatedChannel(unsigned long)
+ .text._ZN13HardwareTimer13resumeChannelEm
+                0x08001600       0xf4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001600                HardwareTimer::resumeChannel(unsigned long)
+ .text._ZN13HardwareTimer6resumeEv
+                0x080016f4       0x42 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080016f4                HardwareTimer::resume()
+ .text._ZN13HardwareTimer7refreshEv
+                0x08001736        0x8 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001736                HardwareTimer::refresh()
+ .text._ZN13HardwareTimer9isRunningEv
+                0x0800173e        0xa .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x0800173e                HardwareTimer::isRunning()
+ .text._ZN13HardwareTimer27updateRegistersIfNotRunningEP11TIM_TypeDef
+                0x08001748       0x3a .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001748                HardwareTimer::updateRegistersIfNotRunning(TIM_TypeDef*)
+ *fill*         0x08001782        0x2 
+ .text._Z15get_timer_indexP11TIM_TypeDef
+                0x08001784       0x2c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001784                get_timer_index(TIM_TypeDef*)
+ .text._ZN13HardwareTimerD2Ev
+                0x080017b0       0x40 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080017b0                HardwareTimer::~HardwareTimer()
+                0x080017b0                HardwareTimer::~HardwareTimer()
+ .text._ZN13HardwareTimer5setupEP11TIM_TypeDef
+                0x080017f0       0x90 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080017f0                HardwareTimer::setup(TIM_TypeDef*)
+ .text._ZN13HardwareTimer15getTimerClkFreqEv
+                0x08001880       0x58 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001880                HardwareTimer::getTimerClkFreq()
+ .text._ZN13HardwareTimer11setOverflowEm13TimerFormat_t
+                0x080018d8       0x4c .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x080018d8                HardwareTimer::setOverflow(unsigned long, TimerFormat_t)
  .text.TIM1_UP_IRQHandler
-                0x08001074       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001074                TIM1_UP_IRQHandler
+                0x08001924       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001924                TIM1_UP_IRQHandler
  .text.TIM1_CC_IRQHandler
-                0x08001088        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001088                TIM1_CC_IRQHandler
+                0x08001938        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001938                TIM1_CC_IRQHandler
  .text.TIM2_IRQHandler
-                0x0800108c       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x0800108c                TIM2_IRQHandler
+                0x0800193c       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x0800193c                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x080010a0       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x080010a0                TIM3_IRQHandler
+                0x08001950       0x14 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001950                TIM3_IRQHandler
+ .text._ZNSt8functionIFvvEEC2Ev
+                0x08001964        0xc .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001964                std::function<void ()>::function()
+                0x08001964                std::function<void ()>::function()
+ .text._ZN13HardwareTimerC2EP11TIM_TypeDef
+                0x08001970       0x2a .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001970                HardwareTimer::HardwareTimer(TIM_TypeDef*)
+                0x08001970                HardwareTimer::HardwareTimer(TIM_TypeDef*)
+ .text._ZNSt8functionIFvvEEC2ERKS1_
+                0x0800199a       0x24 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x0800199a                std::function<void ()>::function(std::function<void ()> const&)
+                0x0800199a                std::function<void ()>::function(std::function<void ()> const&)
+ .text._ZNSt8functionIFvvEEaSERKS1_.isra.0
+                0x080019be       0x42 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .text._ZN13HardwareTimer15attachInterruptESt8functionIFvvEE
+                0x08001a00       0x2e .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a00                HardwareTimer::attachInterrupt(std::function<void ()>)
  .text._ZNKSt8functionIFvvEEclEv
-                0x080010b4       0x12 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x080010b4                std::function<void ()>::operator()() const
+                0x08001a2e       0x12 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a2e                std::function<void ()>::operator()() const
  .text._ZN13HardwareTimer14updateCallbackEP17TIM_HandleTypeDef
-                0x080010c6       0x18 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x080010c6                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
+                0x08001a40       0x18 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a40                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_PeriodElapsedCallback
-                0x080010de        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x080010de                HAL_TIM_PeriodElapsedCallback
+                0x08001a58        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a58                HAL_TIM_PeriodElapsedCallback
  .text._ZN13HardwareTimer22captureCompareCallbackEP17TIM_HandleTypeDef
-                0x080010e2       0x3e .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x080010e2                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
+                0x08001a5c       0x3e .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a5c                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08001120        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001120                HAL_TIM_OC_DelayElapsedCallback
+                0x08001a9a        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a9a                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08001124        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001124                HAL_TIM_IC_CaptureCallback
+                0x08001a9e        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001a9e                HAL_TIM_IC_CaptureCallback
+ .text._Znwj    0x08001aa2        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
+                0x08001aa2                operator new(unsigned int)
+ .text._ZdlPvj  0x08001aa6        0x4 .pio/build/bluepill/SrcWrapper/src/new.cpp.o
+                0x08001aa6                operator delete(void*, unsigned int)
+ *fill*         0x08001aaa        0x2 
+ .text.set_GPIO_Port_Clock
+                0x08001aac       0x88 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
+                0x08001aac                set_GPIO_Port_Clock
+ .text.pwm_stop
+                0x08001b34       0x5c .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
+                0x08001b34                pwm_stop
  .text.getCurrentMillis
-                0x08001128        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
-                0x08001128                getCurrentMillis
+                0x08001b90        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x08001b90                getCurrentMillis
  .text.noOsSystickHandler
-                0x0800112c        0x2 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
-                0x0800112c                noOsSystickHandler
-                0x0800112c                osSystickHandler
+                0x08001b94        0x2 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x08001b94                noOsSystickHandler
+                0x08001b94                osSystickHandler
  .text.SysTick_Handler
-                0x0800112e       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
-                0x0800112e                SysTick_Handler
+                0x08001b96       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x08001b96                SysTick_Handler
  .text.configHSECapacitorTuning
-                0x0800113e        0x2 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
-                0x0800113e                configHSECapacitorTuning
+                0x08001ba6        0x2 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x08001ba6                configHSECapacitorTuning
  .text.configIPClock
-                0x08001140       0x44 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
-                0x08001140                configIPClock
+                0x08001ba8       0x44 .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x08001ba8                configIPClock
  .text.dwt_init
-                0x08001184       0x3c .pio/build/bluepill/SrcWrapper/src/stm32/dwt.c.o
-                0x08001184                dwt_init
+                0x08001bec       0x3c .pio/build/bluepill/SrcWrapper/src/stm32/dwt.c.o
+                0x08001bec                dwt_init
  .text.hw_config_init
-                0x080011c0       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
-                0x080011c0                hw_config_init
+                0x08001c28       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
+                0x08001c28                hw_config_init
+ .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
+                0x08001c4c       0x20 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001c4c                std::_Function_handler<void (), void (*)()>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+ .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
+                0x08001c6c        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001c6c                std::_Function_handler<void (), void (*)()>::_M_invoke(std::_Any_data const&)
  .text.startup._ZNSt8functionIFvvEEC2EDn.constprop.0.isra.0
-                0x080011e4        0xc .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001c70        0xc .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .text.HAL_GPIO_EXTI_Callback
-                0x080011f0       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x080011f0                HAL_GPIO_EXTI_Callback
+                0x08001c7c       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001c7c                HAL_GPIO_EXTI_Callback
  .text.EXTI0_IRQHandler
-                0x0800121c        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x0800121c                EXTI0_IRQHandler
+                0x08001ca8        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001ca8                EXTI0_IRQHandler
  .text.EXTI1_IRQHandler
-                0x08001222        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08001222                EXTI1_IRQHandler
+                0x08001cae        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cae                EXTI1_IRQHandler
  .text.EXTI2_IRQHandler
-                0x08001228        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08001228                EXTI2_IRQHandler
+                0x08001cb4        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cb4                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x0800122e        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x0800122e                EXTI3_IRQHandler
+                0x08001cba        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cba                EXTI3_IRQHandler
  .text.EXTI4_IRQHandler
-                0x08001234        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08001234                EXTI4_IRQHandler
+                0x08001cc0        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cc0                EXTI4_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x0800123a       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x0800123a                EXTI9_5_IRQHandler
+                0x08001cc6       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cc6                EXTI9_5_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08001250       0x18 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08001250                EXTI15_10_IRQHandler
+                0x08001cdc       0x18 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cdc                EXTI15_10_IRQHandler
  .text.startup._GLOBAL__sub_I__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x08001268       0xd8 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001cf4       0xd8 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .text.exit._GLOBAL__sub_D__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x08001340       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08001dcc       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+ .text.pin_SetF1AFPin
+                0x08001de8      0x190 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+ .text.LL_GPIO_SetPinMode
+                0x08001f78       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+ .text.LL_GPIO_SetPinOutputType
+                0x08001fa4       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+ .text.pin_in_pinmap
+                0x08001fd0       0x1e .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x08001fd0                pin_in_pinmap
+ *fill*         0x08001fee        0x2 
+ .text.pin_function
+                0x08001ff0      0x18c .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x08001ff0                pin_function
+ .text.pinmap_pinout
+                0x0800217c       0x1a .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x0800217c                pinmap_pinout
  .text.pinmap_find_peripheral
-                0x0800135c       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
-                0x0800135c                pinmap_find_peripheral
+                0x08002196       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x08002196                pinmap_find_peripheral
  .text.pinmap_peripheral
-                0x08001372        0xc .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
-                0x08001372                pinmap_peripheral
+                0x080021ac        0xc .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x080021ac                pinmap_peripheral
  .text.pinmap_find_pin
-                0x0800137e       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
-                0x0800137e                pinmap_find_pin
+                0x080021b8       0x16 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x080021b8                pinmap_find_pin
  .text.pinmap_pin
-                0x08001394        0xc .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
-                0x08001394                pinmap_pin
+                0x080021ce        0xc .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x080021ce                pinmap_pin
+ .text.pinmap_merge_peripheral
+                0x080021da       0x14 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x080021da                pinmap_merge_peripheral
+ *fill*         0x080021ee        0x2 
  .text.SystemInit
-                0x080013a0       0x4c .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x080013a0                SystemInit
+                0x080021f0       0x4c .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x080021f0                SystemInit
  .text.get_timer_obj
-                0x080013ec        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
-                0x080013ec                get_timer_obj
+                0x0800223c        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x0800223c                get_timer_obj
+ .text.enableTimerClock
+                0x08002240       0x68 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x08002240                enableTimerClock
+ .text.disableTimerClock
+                0x080022a8       0x48 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x080022a8                disableTimerClock
+ .text.getTimerUpIrq
+                0x080022f0       0x30 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x080022f0                getTimerUpIrq
+ .text.getTimerCCIrq
+                0x08002320       0x30 .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x08002320                getTimerCCIrq
+ .text.HAL_TIM_Base_MspInit
+                0x08002350       0x4e .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x08002350                HAL_TIM_Base_MspInit
+ *fill*         0x0800239e        0x2 
+ .text.getTimerClkSrc
+                0x080023a0       0x2c .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x080023a0                getTimerClkSrc
+ .text.uart_init.part.0
+                0x080023cc      0x180 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+ .text.uart_init
+                0x0800254c       0x12 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x0800254c                uart_init
+ *fill*         0x0800255e        0x2 
  .text.serial_rx_active
-                0x080013f0       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x080013f0                serial_rx_active
+                0x08002560       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002560                serial_rx_active
  .text.serial_tx_active
-                0x08001414       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001414                serial_tx_active
+                0x08002584       0x24 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002584                serial_tx_active
+ .text.uart_getc
+                0x080025a8       0x38 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x080025a8                uart_getc
+ .text.uart_attach_rx_callback
+                0x080025e0       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x080025e0                uart_attach_rx_callback
  .text.uart_attach_tx_callback
-                0x08001438       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001438                uart_attach_tx_callback
+                0x08002620       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002620                uart_attach_tx_callback
  .text.uart_enable_tx
-                0x08001478       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001478                uart_enable_tx
+                0x08002660       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002660                uart_enable_tx
  .text.uart_enable_rx
-                0x08001494       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001494                uart_enable_rx
+                0x0800267c       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x0800267c                uart_enable_rx
  .text.HAL_UART_RxCpltCallback
-                0x080014b0        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x080014b0                HAL_UART_RxCpltCallback
+                0x08002698        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002698                HAL_UART_RxCpltCallback
  .text.HAL_UART_TxCpltCallback
-                0x080014b6        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x080014b6                HAL_UART_TxCpltCallback
+                0x0800269e        0x6 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x0800269e                HAL_UART_TxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x080014bc       0x7c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x080014bc                HAL_UART_ErrorCallback
+                0x080026a4       0x7c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x080026a4                HAL_UART_ErrorCallback
  .text.USART1_IRQHandler
-                0x08001538       0x18 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001538                USART1_IRQHandler
+                0x08002720       0x18 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002720                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x08001550       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
-                0x08001550                USART2_IRQHandler
- .text._exit    0x0800156c        0x2 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
-                0x0800156c                _exit
- *fill*         0x0800156e        0x2 
- .text._kill    0x08001570       0x10 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
-                0x08001570                _kill
- .text._getpid  0x08001580        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
-                0x08001580                _getpid
- .text.setup    0x08001584        0x2 .pio/build/bluepill/src/main.cpp.o
-                0x08001584                setup
- .text.loop     0x08001586        0x2 .pio/build/bluepill/src/main.cpp.o
-                0x08001586                loop
- .text.startup._Z7premainv
-                0x08001588       0x10 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
-                0x08001588                premain()
- .text.startup.main
-                0x08001598       0x14 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
-                0x08001598                main
- .text.Reset_Handler
-                0x080015ac       0x48 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x080015ac                Reset_Handler
- .text.Default_Handler
-                0x080015f4        0x2 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x080015f4                RTC_Alarm_IRQHandler
-                0x080015f4                DebugMon_Handler
-                0x080015f4                HardFault_Handler
-                0x080015f4                PVD_IRQHandler
-                0x080015f4                PendSV_Handler
-                0x080015f4                NMI_Handler
-                0x080015f4                UsageFault_Handler
-                0x080015f4                ADC1_2_IRQHandler
-                0x080015f4                SPI1_IRQHandler
-                0x080015f4                TAMPER_IRQHandler
-                0x080015f4                DMA1_Channel4_IRQHandler
-                0x080015f4                RTC_IRQHandler
-                0x080015f4                DMA1_Channel7_IRQHandler
-                0x080015f4                CAN1_RX1_IRQHandler
-                0x080015f4                I2C1_EV_IRQHandler
-                0x080015f4                DMA1_Channel6_IRQHandler
-                0x080015f4                RCC_IRQHandler
-                0x080015f4                TIM1_TRG_COM_IRQHandler
-                0x080015f4                DMA1_Channel1_IRQHandler
-                0x080015f4                Default_Handler
-                0x080015f4                MemManage_Handler
-                0x080015f4                SVC_Handler
-                0x080015f4                DMA1_Channel5_IRQHandler
-                0x080015f4                USB_LP_CAN1_RX0_IRQHandler
-                0x080015f4                USB_HP_CAN1_TX_IRQHandler
-                0x080015f4                DMA1_Channel3_IRQHandler
-                0x080015f4                WWDG_IRQHandler
-                0x080015f4                TIM1_BRK_IRQHandler
-                0x080015f4                DMA1_Channel2_IRQHandler
-                0x080015f4                CAN1_SCE_IRQHandler
-                0x080015f4                FLASH_IRQHandler
-                0x080015f4                BusFault_Handler
-                0x080015f4                I2C1_ER_IRQHandler
-                0x080015f4                USBWakeUp_IRQHandler
- *fill*         0x080015f6        0x2 
- .text._Z14serialEventRunv
-                0x080015f8       0x1c .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
-                0x080015f8                serialEventRun()
- .text.init     0x08001614        0x4 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
-                0x08001614                init
+                0x08002738       0x1c .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x08002738                USART2_IRQHandler
+ .text._sbrk    0x08002754       0x3c .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
+                0x08002754                _sbrk
+ .text._exit    0x08002790        0x2 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
+                0x08002790                _exit
+ *fill*         0x08002792        0x2 
+ .text._kill    0x08002794       0x10 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
+                0x08002794                _kill
+ .text._getpid  0x080027a4        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
+                0x080027a4                _getpid
+ .text.setup    0x080027a8       0x90 .pio/build/bluepill/src/main.cpp.o
+                0x080027a8                setup
+ .text.loop     0x08002838        0x2 .pio/build/bluepill/src/main.cpp.o
+                0x08002838                loop
+ *fill*         0x0800283a        0x2 
+ .text._Z14timerInterruptv
+                0x0800283c       0x28 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+                0x0800283c                timerInterrupt()
+ .text._Z8setTimerv
+                0x08002864       0x54 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+                0x08002864                setTimer()
+ .text.startup._GLOBAL__sub_I_timer
+                0x080028b8       0x1c .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
  .text._ZN5Print5flushEv
-                0x08001618        0x2 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001618                Print::flush()
+                0x080028d4        0x2 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080028d4                Print::flush()
  .text._ZN14HardwareSerial9availableEv
-                0x0800161a       0x10 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800161a                HardwareSerial::available()
+                0x080028d6       0x10 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080028d6                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x0800162a       0x1a .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800162a                HardwareSerial::peek()
+                0x080028e6       0x1a .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080028e6                HardwareSerial::peek()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x08001644       0x1c .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001644                HardwareSerial::availableForWrite()
+                0x08002900       0x1c .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002900                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x08001660       0x18 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001660                HardwareSerial::write(unsigned char)
+                0x0800291c       0x18 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x0800291c                HardwareSerial::write(unsigned char)
+ .text._ZN14HardwareSerial16_rx_complete_irqEP8serial_s
+                0x08002934       0x36 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002934                HardwareSerial::_rx_complete_irq(serial_s*)
+ *fill*         0x0800296a        0x2 
  .text._ZN14HardwareSerial16_tx_complete_irqEP8serial_s
-                0x08001678       0x60 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001678                HardwareSerial::_tx_complete_irq(serial_s*)
+                0x0800296c       0x60 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x0800296c                HardwareSerial::_tx_complete_irq(serial_s*)
  .text._ZN14HardwareSerial5writeEPKhj
-                0x080016d8       0xe4 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080016d8                HardwareSerial::write(unsigned char const*, unsigned int)
+                0x080029cc       0xe4 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080029cc                HardwareSerial::write(unsigned char const*, unsigned int)
  .text._ZN14HardwareSerial5flushEm
-                0x080017bc       0x36 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080017bc                HardwareSerial::flush(unsigned long)
+                0x08002ab0       0x36 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002ab0                HardwareSerial::flush(unsigned long)
  .text._ZN14HardwareSerial4initE7PinNameS0_S0_S0_
-                0x080017f2       0x32 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080017f2                HardwareSerial::init(PinName, PinName, PinName, PinName)
+                0x08002ae6       0x32 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002ae6                HardwareSerial::init(PinName, PinName, PinName, PinName)
  .text._ZN14HardwareSerialC2EPv16HalfDuplexMode_t
-                0x08001824       0x94 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001824                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
-                0x08001824                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08002b18       0x94 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002b18                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08002b18                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
  .text._ZN14HardwareSerial18enableHalfDuplexRxEv
-                0x080018b8       0x2e .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080018b8                HardwareSerial::enableHalfDuplexRx()
+                0x08002bac       0x2e .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002bac                HardwareSerial::enableHalfDuplexRx()
+ *fill*         0x08002bda        0x2 
+ .text._ZN14HardwareSerial5beginEmh
+                0x08002bdc       0x84 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002bdc                HardwareSerial::begin(unsigned long, unsigned char)
  .text._ZN14HardwareSerial4readEv
-                0x080018e6       0x2e .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080018e6                HardwareSerial::read()
+                0x08002c60       0x2e .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002c60                HardwareSerial::read()
+ *fill*         0x08002c8e        0x2 
  .text.startup._GLOBAL__sub_I_Serial1
-                0x08001914       0x14 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08002c90       0x14 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+ .text._ZN5Print5writeEPKc
+                0x08002ca4       0x20 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                0x08002ca4                Print::write(char const*)
+ .text._ZN5Print7printlnEv
+                0x08002cc4       0x10 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                0x08002cc4                Print::println()
+ .text._ZN5Print7printlnEPK19__FlashStringHelper
+                0x08002cd4       0x14 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                0x08002cd4                Print::println(__FlashStringHelper const*)
+ .text._ZN5Print7printlnEPKc
+                0x08002ce8        0x4 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                0x08002ce8                Print::println(char const*)
  .text._ZN6Stream9timedReadEv
-                0x08001928       0x2a .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001928                Stream::timedRead()
+                0x08002cec       0x2a .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
+                0x08002cec                Stream::timedRead()
  .text._ZN6Stream9readBytesEPcj
-                0x08001952       0x22 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001952                Stream::readBytes(char*, unsigned int)
+                0x08002d16       0x22 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
+                0x08002d16                Stream::readBytes(char*, unsigned int)
  .text._ZN6Stream14readBytesUntilEcPcj
-                0x08001974       0x30 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
-                0x08001974                Stream::readBytesUntil(char, char*, unsigned int)
- .text.millis   0x080019a4        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
-                0x080019a4                millis
+                0x08002d38       0x30 .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
+                0x08002d38                Stream::readBytesUntil(char, char*, unsigned int)
+ .text.startup._Z7premainv
+                0x08002d68       0x10 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+                0x08002d68                premain()
+ .text.startup.main
+                0x08002d78       0x14 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+                0x08002d78                main
+ .text.Reset_Handler
+                0x08002d8c       0x48 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x08002d8c                Reset_Handler
+ .text.Default_Handler
+                0x08002dd4        0x2 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x08002dd4                RTC_Alarm_IRQHandler
+                0x08002dd4                DebugMon_Handler
+                0x08002dd4                HardFault_Handler
+                0x08002dd4                PVD_IRQHandler
+                0x08002dd4                PendSV_Handler
+                0x08002dd4                NMI_Handler
+                0x08002dd4                UsageFault_Handler
+                0x08002dd4                ADC1_2_IRQHandler
+                0x08002dd4                SPI1_IRQHandler
+                0x08002dd4                TAMPER_IRQHandler
+                0x08002dd4                DMA1_Channel4_IRQHandler
+                0x08002dd4                RTC_IRQHandler
+                0x08002dd4                DMA1_Channel7_IRQHandler
+                0x08002dd4                CAN1_RX1_IRQHandler
+                0x08002dd4                I2C1_EV_IRQHandler
+                0x08002dd4                DMA1_Channel6_IRQHandler
+                0x08002dd4                RCC_IRQHandler
+                0x08002dd4                TIM1_TRG_COM_IRQHandler
+                0x08002dd4                DMA1_Channel1_IRQHandler
+                0x08002dd4                Default_Handler
+                0x08002dd4                MemManage_Handler
+                0x08002dd4                SVC_Handler
+                0x08002dd4                DMA1_Channel5_IRQHandler
+                0x08002dd4                USB_LP_CAN1_RX0_IRQHandler
+                0x08002dd4                USB_HP_CAN1_TX_IRQHandler
+                0x08002dd4                DMA1_Channel3_IRQHandler
+                0x08002dd4                WWDG_IRQHandler
+                0x08002dd4                TIM1_BRK_IRQHandler
+                0x08002dd4                DMA1_Channel2_IRQHandler
+                0x08002dd4                CAN1_SCE_IRQHandler
+                0x08002dd4                FLASH_IRQHandler
+                0x08002dd4                BusFault_Handler
+                0x08002dd4                I2C1_ER_IRQHandler
+                0x08002dd4                USBWakeUp_IRQHandler
+ *fill*         0x08002dd6        0x2 
+ .text.pinMode  0x08002dd8       0xbc .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+                0x08002dd8                pinMode
+ .text.digitalWrite
+                0x08002e94       0x78 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+                0x08002e94                digitalWrite
+ .text.digitalRead
+                0x08002f0c       0x70 .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+                0x08002f0c                digitalRead
+ .text.millis   0x08002f7c        0x4 .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
+                0x08002f7c                millis
+ .text._Z14serialEventRunv
+                0x08002f80       0x1c .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+                0x08002f80                serialEventRun()
+ .text.init     0x08002f9c        0x4 .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
+                0x08002f9c                init
  .text.unlikely._ZSt25__throw_bad_function_callv
-                0x080019a8        0x6 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functional.o)
-                0x080019a8                std::__throw_bad_function_call()
- .text.abort    0x080019ae        0xe /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-abort.o)
-                0x080019ae                abort
- .text.memset   0x080019bc       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
-                0x080019bc                memset
+                0x08002fa0        0x6 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functional.o)
+                0x08002fa0                std::__throw_bad_function_call()
+ .text.abort    0x08002fa6        0xe /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-abort.o)
+                0x08002fa6                abort
+ .text.malloc   0x08002fb4       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+                0x08002fb4                malloc
+ .text.free     0x08002fc4       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+                0x08002fc4                free
+ .text.sbrk_aligned
+                0x08002fd4       0x44 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x08003018      0x100 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x08003018                _malloc_r
+ .text.__malloc_lock
+                0x08003118        0xc /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x08003118                __malloc_lock
+ .text.__malloc_unlock
+                0x08003124        0xc /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+                0x08003124                __malloc_unlock
+ .text.memset   0x08003130       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x08003130                memset
  .text._raise_r
-                0x080019cc       0x50 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
-                0x080019cc                _raise_r
- .text.raise    0x08001a1c       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
-                0x08001a1c                raise
- .text._kill_r  0x08001a2c       0x24 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
-                0x08001a2c                _kill_r
+                0x08003140       0x50 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
+                0x08003140                _raise_r
+ .text.raise    0x08003190       0x10 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
+                0x08003190                raise
+ .text._kill_r  0x080031a0       0x24 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
+                0x080031a0                _kill_r
  .text._getpid_r
-                0x08001a50        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
-                0x08001a50                _getpid_r
+                0x080031c4        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
+                0x080031c4                _getpid_r
+ .text._sbrk_r  0x080031c8       0x20 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+                0x080031c8                _sbrk_r
  .text.__libc_init_array
-                0x08001a54       0x48 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
-                0x08001a54                __libc_init_array
- .text.memcpy   0x08001a9c       0x1c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
-                0x08001a9c                memcpy
+                0x080031e8       0x48 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
+                0x080031e8                __libc_init_array
+ .text.__retarget_lock_acquire_recursive
+                0x08003230        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x08003230                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x08003232        0x2 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x08003232                __retarget_lock_release_recursive
+ .text.memcpy   0x08003234       0x1c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                0x08003234                memcpy
+ .text._free_r  0x08003250       0x90 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+                0x08003250                _free_r
  *(.glue_7)
- .glue_7        0x08001ab8        0x0 linker stubs
+ .glue_7        0x080032e0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08001ab8        0x0 linker stubs
+ .glue_7t       0x080032e0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08001ab8        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080032e0        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08001ab8        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08001ab8                _init
- .init          0x08001abc        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080032e0        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x080032e0                _init
+ .init          0x080032e4        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08001ac4        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
-                0x08001ac4                _fini
- .fini          0x08001ac8        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
-                0x08001ad0                        . = ALIGN (0x4)
-                0x08001ad0                        _etext = .
+ .fini          0x080032ec        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
+                0x080032ec                _fini
+ .fini          0x080032f0        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x080032f8                        . = ALIGN (0x4)
+                0x080032f8                        _etext = .
 
-.vfp11_veneer   0x08001ad0        0x0
- .vfp11_veneer  0x08001ad0        0x0 linker stubs
+.vfp11_veneer   0x080032f8        0x0
+ .vfp11_veneer  0x080032f8        0x0 linker stubs
 
-.v4_bx          0x08001ad0        0x0
- .v4_bx         0x08001ad0        0x0 linker stubs
+.v4_bx          0x080032f8        0x0
+ .v4_bx         0x080032f8        0x0 linker stubs
 
-.iplt           0x08001ad0        0x0
- .iplt          0x08001ad0        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x080032f8        0x0
+ .iplt          0x080032f8        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08001ad0      0x140
-                0x08001ad0                        . = ALIGN (0x4)
+.rodata         0x080032f8      0x3fc
+                0x080032f8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
+ .rodata.PinMap_UART_CTS
+                0x080032f8       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080032f8                PinMap_UART_CTS
+ .rodata.PinMap_UART_RTS
+                0x0800331c       0x24 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x0800331c                PinMap_UART_RTS
  .rodata.PinMap_UART_RX
-                0x08001ad0       0x30 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08001ad0                PinMap_UART_RX
+                0x08003340       0x30 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x08003340                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x08001b00       0x30 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08001b00                PinMap_UART_TX
+                0x08003370       0x30 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x08003370                PinMap_UART_TX
+ .rodata.PinMap_TIM
+                0x080033a0      0x1d4 .pio/build/bluepill/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080033a0                PinMap_TIM
+ .rodata.analogInputPin
+                0x08003574       0x28 .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
+                0x08003574                analogInputPin
  .rodata.digitalPin
-                0x08001b30       0x8c .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
-                0x08001b30                digitalPin
+                0x0800359c       0x8c .pio/build/bluepill/FrameworkArduinoVariant/variant_BLUEPILL_F103C6.cpp.o
+                0x0800359c                digitalPin
  .rodata.aPredivFactorTable.0
-                0x08001bbc        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x08003628        0x2 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
  .rodata.aPLLMULFactorTable.1
-                0x08001bbe       0x10 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+                0x0800362a       0x10 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_rcc.c.o
+ .rodata.CSWTCH.99
+                0x0800363a        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .rodata.CSWTCH.97
+                0x0800363e        0x4 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .rodata.CSWTCH.95
+                0x08003642        0x8 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .rodata.CSWTCH.94
+                0x0800364a        0x6 .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .rodata.pin_map_ll
+                0x08003650       0x40 .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x08003650                pin_map_ll
+ .rodata.APBPrescTable
+                0x08003690        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x08003690                APBPrescTable
  .rodata.AHBPrescTable
-                0x08001bce       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x08001bce                AHBPrescTable
- *fill*         0x08001bde        0x2 
+                0x08003698       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x08003698                AHBPrescTable
+ .rodata.setup.str1.1
+                0x080036a8        0x7 .pio/build/bluepill/src/main.cpp.o
+ .rodata._Z14timerInterruptv.str1.1
+                0x080036af        0xb .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .rodata.CSWTCH.73
+                0x080036ba        0x5 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+ *fill*         0x080036bf        0x1 
  .rodata._ZTV14HardwareSerial
-                0x08001be0       0x30 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001be0                vtable for HardwareSerial
-                0x08001c10                        . = ALIGN (0x4)
+                0x080036c0       0x30 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080036c0                vtable for HardwareSerial
+ .rodata._ZN5Print7printlnEv.str1.1
+                0x080036f0        0x3 .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+                0x080036f4                        . = ALIGN (0x4)
+ *fill*         0x080036f3        0x1 
 
-.rel.dyn        0x08001c10        0x0
- .rel.iplt      0x08001c10        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-
-.ARM.extab      0x08001c10        0x0
-                0x08001c10                        . = ALIGN (0x4)
+.ARM.extab      0x080036f4        0x0
+                0x080036f4                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08001c10                        . = ALIGN (0x4)
+                0x080036f4                        . = ALIGN (0x4)
 
-.ARM            0x08001c10        0x0
-                0x08001c10                        . = ALIGN (0x4)
-                0x08001c10                        __exidx_start = .
+.ARM            0x080036f4        0x8
+                0x080036f4                        . = ALIGN (0x4)
+                0x080036f4                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08001c10                        __exidx_end = .
-                0x08001c10                        . = ALIGN (0x4)
+ .ARM.exidx     0x080036f4        0x8 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
+                0x080036fc                        __exidx_end = .
+                0x080036fc                        . = ALIGN (0x4)
 
-.preinit_array  0x08001c10        0x0
-                0x08001c10                        . = ALIGN (0x4)
-                0x08001c10                        PROVIDE (__preinit_array_start = .)
+.rel.dyn        0x080036fc        0x0
+ .rel.iplt      0x080036fc        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+
+.preinit_array  0x080036fc        0x0
+                0x080036fc                        . = ALIGN (0x4)
+                0x080036fc                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08001c10                        PROVIDE (__preinit_array_end = .)
-                0x08001c10                        . = ALIGN (0x4)
+                0x080036fc                        PROVIDE (__preinit_array_end = .)
+                0x080036fc                        . = ALIGN (0x4)
 
-.init_array     0x08001c10       0x10
-                0x08001c10                        . = ALIGN (0x4)
-                0x08001c10                        PROVIDE (__init_array_start = .)
+.init_array     0x080036fc       0x14
+                0x080036fc                        . = ALIGN (0x4)
+                0x080036fc                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00101
-                0x08001c10        0x4 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+                0x080036fc        0x4 .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
  *(.init_array*)
- .init_array    0x08001c14        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
- .init_array    0x08001c18        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
- .init_array    0x08001c1c        0x4 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08001c20                        PROVIDE (__init_array_end = .)
-                0x08001c20                        . = ALIGN (0x4)
+ .init_array    0x08003700        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .init_array    0x08003704        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+ .init_array    0x08003708        0x4 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .init_array    0x0800370c        0x4 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003710                        PROVIDE (__init_array_end = .)
+                0x08003710                        . = ALIGN (0x4)
 
-.fini_array     0x08001c20        0x8
-                0x08001c20                        . = ALIGN (0x4)
-                0x08001c20                        PROVIDE (__fini_array_start = .)
+.fini_array     0x08003710        0x8
+                0x08003710                        . = ALIGN (0x4)
+                0x08003710                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08001c20        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
- .fini_array    0x08001c24        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08001c28                        PROVIDE (__fini_array_end = .)
-                0x08001c28                        . = ALIGN (0x4)
-                0x08001c28                        _sidata = LOADADDR (.data)
+ .fini_array    0x08003710        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x08003714        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08003718                        PROVIDE (__fini_array_end = .)
+                0x08003718                        . = ALIGN (0x4)
+                0x08003718                        _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x64 load address 0x08001c28
+.data           0x20000000       0x78 load address 0x08003718
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -4639,54 +4708,74 @@ Linker script and memory map
  .data.uwTickPrio
                 0x20000004        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
                 0x20000004                uwTickPrio
- .data.hcrc     0x20000008        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
-                0x20000008                hcrc
+ .data.GPIOPort
+                0x20000008       0x10 .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
+                0x20000008                GPIOPort
+ .data.hcrc     0x20000018        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
+                0x20000018                hcrc
  .data.SystemCoreClock
-                0x20000010        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x20000010                SystemCoreClock
+                0x20000020        0x4 .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x20000020                SystemCoreClock
+ .data.heap_end.0
+                0x20000024        0x4 .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .data._impure_ptr
-                0x20000014        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
-                0x20000014                _impure_ptr
+                0x20000028        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x20000028                _impure_ptr
  .data._impure_data
-                0x20000018       0x4c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
-                0x20000018                _impure_data
+                0x2000002c       0x4c /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x2000002c                _impure_data
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000064                        . = ALIGN (0x4)
-                0x20000064                        _edata = .
+                0x20000078                        . = ALIGN (0x4)
+                0x20000078                        _edata = .
 
-.igot.plt       0x20000064        0x0 load address 0x08001c8c
- .igot.plt      0x20000064        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x20000064                        . = ALIGN (0x4)
+.igot.plt       0x20000078        0x0 load address 0x08003790
+ .igot.plt      0x20000078        0x0 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x20000078                        . = ALIGN (0x4)
 
-.bss            0x20000064      0x3c8 load address 0x08001c8c
-                0x20000064                        _sbss = .
-                0x20000064                        __bss_start__ = _sbss
+.bss            0x20000078      0x3e8 load address 0x08003790
+                0x20000078                        _sbss = .
+                0x20000078                        __bss_start__ = _sbss
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x20000064        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
- *fill*         0x20000065        0x3 
- .bss.object.0  0x20000068       0x18 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
- .bss.uwTick    0x20000080        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
-                0x20000080                uwTick
+                0x20000078        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ *fill*         0x20000079        0x3 
+ .bss.object.0  0x2000007c       0x18 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
+ .bss.uwTick    0x20000094        0x4 .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal.c.o
+                0x20000094                uwTick
  .bss.HardwareTimer_Handle
-                0x20000084        0xc .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
-                0x20000084                HardwareTimer_Handle
+                0x20000098        0xc .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+                0x20000098                HardwareTimer_Handle
  .bss._ZL13gpio_irq_conf
-                0x20000090      0x140 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x200000a4      0x140 .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .bss.uart_handlers
-                0x200001d0        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
- .bss.Serial1   0x200001d8      0x118 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x200001d8                Serial1
- .bss.__sf      0x200002f0      0x138 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-findfp.o)
-                0x200002f0                __sf
- .bss.errno     0x20000428        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
-                0x20000428                errno
+                0x200001e4        0x8 .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+ .bss.timer     0x200001ec        0x4 .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+                0x200001ec                timer
+ .bss.Serial1   0x200001f0      0x118 .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x200001f0                Serial1
+ .bss.g_anOutputPinConfigured
+                0x20000308       0x10 .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
+                0x20000308                g_anOutputPinConfigured
+ .bss.__malloc_sbrk_start
+                0x20000318        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x20000318                __malloc_sbrk_start
+ .bss.__malloc_free_list
+                0x2000031c        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+                0x2000031c                __malloc_free_list
+ .bss.__sf      0x20000320      0x138 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-findfp.o)
+                0x20000320                __sf
+ .bss.errno     0x20000458        0x4 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x20000458                errno
+ .bss.__lock___malloc_recursive_mutex
+                0x2000045c        0x1 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+                0x2000045c                __lock___malloc_recursive_mutex
  *(COMMON)
-                0x2000042c                        . = ALIGN (0x4)
-                0x2000042c                        _ebss = .
-                0x2000042c                        __bss_end__ = _ebss
+                0x20000460                        . = ALIGN (0x4)
+ *fill*         0x2000045d        0x3 
+                0x20000460                        _ebss = .
+                0x20000460                        __bss_end__ = _ebss
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crti.o
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
@@ -4872,6 +4961,7 @@ LOAD .pio/build/bluepill/src/main.cpp.o
 START GROUP
 LOAD .pio/build/bluepill/lib358/libWire.a
 LOAD .pio/build/bluepill/lib4f6/libLCD.a
+LOAD .pio/build/bluepill/lib507/libinverter.a
 LOAD .pio/build/bluepill/libFrameworkArduino.a
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/libgcc.a
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a
@@ -4890,25 +4980,24 @@ END GROUP
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtend.o
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
 
-.noinit         0x2000042c        0x0
-                0x2000042c                        . = ALIGN (0x4)
-                0x2000042c                        _snoinit = .
+.noinit         0x20000460        0x0
+                0x20000460                        . = ALIGN (0x4)
+                0x20000460                        _snoinit = .
  *(.noinit)
  *(.noinit*)
-                0x2000042c                        . = ALIGN (0x4)
-                0x2000042c                        _enoinit = .
+                0x20000460                        . = ALIGN (0x4)
+                0x20000460                        _enoinit = .
 
 ._user_heap_stack
-                0x2000042c      0x604
-                0x20000430                        . = ALIGN (0x8)
- *fill*         0x2000042c        0x4 
+                0x20000460      0x600
+                0x20000460                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x20000430                        PROVIDE (_end = .)
-                0x20000630                        . = (. + _Min_Heap_Size)
- *fill*         0x20000430      0x200 
-                0x20000a30                        . = (. + _Min_Stack_Size)
- *fill*         0x20000630      0x400 
-                0x20000a30                        . = ALIGN (0x8)
+                0x20000460                        PROVIDE (_end = .)
+                0x20000660                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000460      0x200 
+                0x20000a60                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000660      0x400 
+                0x20000a60                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -4949,61 +5038,89 @@ LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/ar
  .ARM.attributes
                 0x00000266       0x2d .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
  .ARM.attributes
-                0x00000293       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
+                0x00000293       0x2d .pio/build/bluepill/SrcWrapper/src/new.cpp.o
  .ARM.attributes
-                0x000002c0       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/dwt.c.o
+                0x000002c0       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
  .ARM.attributes
-                0x000002ed       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
+                0x000002ed       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .ARM.attributes
-                0x0000031a       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x0000031a       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
  .ARM.attributes
-                0x00000347       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
+                0x00000347       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/dwt.c.o
  .ARM.attributes
-                0x00000374       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x00000374       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
  .ARM.attributes
-                0x000003a1       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
+                0x000003a1       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/interrupt.cpp.o
  .ARM.attributes
-                0x000003ce       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
+                0x000003ce       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/pinmap.c.o
  .ARM.attributes
-                0x000003fb       0x2d .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
+                0x000003fb       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/system_stm32yyxx.c.o
  .ARM.attributes
-                0x00000428       0x2d .pio/build/bluepill/src/main.cpp.o
+                0x00000428       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/timer.c.o
  .ARM.attributes
-                0x00000455       0x2d .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+                0x00000455       0x2d .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .ARM.attributes
-                0x00000482       0x21 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x00000482       0x2d .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .ARM.attributes
-                0x000004a3       0x2d .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
+                0x000004af       0x2d .pio/build/bluepill/src/main.cpp.o
  .ARM.attributes
-                0x000004d0       0x2d .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
+                0x000004dc       0x2d .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
  .ARM.attributes
-                0x000004fd       0x2d .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x00000509       0x2d .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .ARM.attributes
-                0x0000052a       0x2d .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
+                0x00000536       0x2d .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
  .ARM.attributes
-                0x00000557       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
+                0x00000563       0x2d .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
  .ARM.attributes
-                0x00000584       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functional.o)
+                0x00000590       0x2d .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
  .ARM.attributes
-                0x000005b1       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-abort.o)
+                0x000005bd       0x21 .pio/build/bluepill/libFrameworkArduino.a(startup_stm32yyxx.S.o)
  .ARM.attributes
-                0x000005de       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-findfp.o)
+                0x000005de       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
  .ARM.attributes
-                0x0000060b       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x0000060b       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .ARM.attributes
-                0x00000638       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
+                0x00000638       0x2d .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
  .ARM.attributes
-                0x00000665       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+                0x00000665       0x2d .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
  .ARM.attributes
-                0x00000692       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+                0x00000692       0x2d .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
  .ARM.attributes
-                0x000006bf       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
+                0x000006bf       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functional.o)
  .ARM.attributes
-                0x000006ec       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
+                0x000006ec       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-abort.o)
  .ARM.attributes
-                0x00000719       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+                0x00000719       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
  .ARM.attributes
-                0x00000746       0x1d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
+                0x00000746       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x00000773       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x000007a0       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x000007cd       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x000007fa       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
+ .ARM.attributes
+                0x00000827       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
+ .ARM.attributes
+                0x00000854       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
+ .ARM.attributes
+                0x00000881       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
+ .ARM.attributes
+                0x000008ae       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x000008db       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x00000908       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
+ .ARM.attributes
+                0x00000935       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000962       0x17 /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen.o)
+ .ARM.attributes
+                0x00000979       0x2d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)
+ .ARM.attributes
+                0x000009a6       0x1d /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(.pio/build/bluepill/firmware.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
@@ -5026,6 +5143,9 @@ LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/ar
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_tim_ex.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/HAL/stm32yyxx_hal_uart.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/HardwareTimer.cpp.o
+ .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/new.cpp.o
+ .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/PortNames.c.o
+ .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/analog.cpp.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/clock.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/dwt.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/hw_config.c.o
@@ -5036,19 +5156,29 @@ LOAD /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/ar
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/stm32/uart.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/SrcWrapper/src/syscalls.c.o
  .comment       0x00000039       0x3a .pio/build/bluepill/src/main.cpp.o
+ .comment       0x00000039       0x3a .pio/build/bluepill/lib507/libinverter.a(inverter.cpp.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(Print.cpp.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
  .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(main.cpp.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_digital.c.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
  .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(WSerial.cpp.o)
  .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(board.c.o)
- .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(HardwareSerial.cpp.o)
- .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(Stream.cpp.o)
- .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_time.c.o)
+ .comment       0x00000039       0x3a .pio/build/bluepill/libFrameworkArduino.a(wiring_analog.c.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functional.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-abort.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-malloc.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mallocr.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-mlock.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-findfp.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signal.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-reent.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-impure.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-signalr.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-sbrkr.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-init.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-lock.o)
  .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy-stub.o)
+ .comment       0x00000039       0x3a /home/chima/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-freer.o)

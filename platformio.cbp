@@ -129,6 +129,8 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lib/STM32RTC/src/rtc.h" />
+		<Unit filename="lib/inverter/src/inverter.cpp" />
+		<Unit filename="lib/inverter/src/inverter.h" />
 		<Unit filename="platformio.ini" />
 		<Unit filename="src/main.cpp" />
 		<Extensions />

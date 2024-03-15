@@ -1,0 +1,78 @@
+#include <Arduino.h>
+#include <LiquidCrystal_I2C.h>
+#include <HardwareTimer.h>
+
+#define sw1 PA3
+#define sw2 PA4
+#define sw3 PA5
+#define sw4 PA6
+
+#define fan PA15
+#define iSense PA0
+#define vSense PA1
+#define tSense PA2
+#define buzzer PB1
+#define invSw PB5
+
+
+//LiquidCrystal_I2C lcd (0x27);
+HardwareTimer *timer = new HardwareTimer(TIM2);
+
+void setup();
+void loop();
+void timerInterrupt();
+
+
+void setup()
+{
+    //Set pin modes:
+    Serial.begin(115200);
+    Serial.println("HELLO.");
+    HAL_Delay(100);
+    digitalWrite(PC13, HIGH);
+
+    pinMode(PC13, OUTPUT);
+
+    pinMode(sw1, INPUT);
+    pinMode(sw2, INPUT);
+    pinMode(sw3, INPUT);
+    pinMode(sw4, INPUT);
+
+    pinMode(iSense, INPUT_ANALOG);
+    pinMode(vSense, INPUT_ANALOG);
+    pinMode(tSense, INPUT_ANALOG);
+
+    pinMode(buzzer, OUTPUT);
+    pinMode(fan, OUTPUT);
+
+    digitalWrite(buzzer, 0);
+
+    //Init LCD:
+//    lcd.begin(16, 2);
+
+    //Configure timer:
+    uint32_t prescaler = 72000000 / ((1/5) - 1);
+    timer->setPrescaleFactor(prescaler);
+    timer->setOverflow(5 * 1000000, MICROSEC_FORMAT);
+
+    // Attach the interrupt
+    timer->attachInterrupt(timerInterrupt);
+
+    // Start the timer
+    timer->resume();
+
+}
+
+
+void loop()
+{
+
+}
+
+void timerInterrupt()
+{
+    digitalWrite(PC13, !(digitalRead(PC13)));
+    HAL_Delay(100);
+    Serial.println("Interrupt!");
+
+}
