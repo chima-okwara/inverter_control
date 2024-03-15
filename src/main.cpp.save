@@ -2,38 +2,99 @@
 #include <inverter.h>
 
 
-//LiquidCrystal_I2C lcd (0x27);
+char volstr[3] { }, curstr[3] { }, temstr[3] { };
+bool over;
 
 void setup()
 {
     //Set pin modes:
-    setTimer();
+    init();
     Serial.begin(115200);
     Serial.println("HELLO.");
     digitalWrite(PC13, HIGH);
 
-    pinMode(PC13, OUTPUT);
-
-    pinMode(sw1, INPUT);
-    pinMode(sw2, INPUT);
-    pinMode(sw3, INPUT);
-    pinMode(sw4, INPUT);
-
-    pinMode(iSense, INPUT_ANALOG);
-    pinMode(vSense, INPUT_ANALOG);
-    pinMode(tSense, INPUT_ANALOG);
-
-    pinMode(buzzer, OUTPUT);
-    pinMode(fan, OUTPUT);
-
-    digitalWrite(buzzer, 0);
-
-
+    disp();
+    over = false;
 }
 
 
 void loop()
 {
+    if(UVP)
+    {
+        lcd.clear();
+        do
+        {
+            lcd.home();
+            lcd.print("BATTERY LOW!");
+            lcd.setCursor(0, 1);
+            char msg [] = "Inverter off. Press S1 to override.";
+            lcd.print(msg);
+            int len = size(msg);
+            for(int i = 0; i < len; ++i)
+            {
+                lcd.scrollDisplayLeft();
+                delay(500);
+            }
+            delay(100);
+        } while(!s1 && !s2 && UVP);
+        if(s1)
+        {
+            s1 = false;
+            over = true;
+        }
+    }
+
+    if(OCP)
+    {
+        lcd.clear();
+        do
+        {
+            lcd.home();
+            lcd.print("TOO MUCH CURRENT!");
+            lcd.setCursor(0, 1);
+            char msg [] = "Inverter off. Remove load!";
+            lcd.print(msg);
+            int len = size(msg);
+            for(int i = 0; i < len; ++i)
+            {
+                lcd.scrollDisplayLeft();
+                delay(500);
+            }
+            delay(100);
+        } while(!s1 && !s2 && OCP);
+        if(s1 || s2)
+        {
+            s1 = false;
+            s2 = false;
+        }
+    }
+
+    if(OTP)
+    {
+        analogWriteResolution(12);
+        uint32_t fanspeed = map((long) temperature, 44, 99, 0, 4095);
+        fanspeed = constrain(fanspeed, 500, 4095);
+        analogWrite(fan, fanspeed);
+
+        if(temperature >= 99)
+            do
+            {
+                lcd.clear();
+                lcd.home();
+                lcd.print("SYSTEM TOO HOT");
+                lcd.setCursor(0, 1);
+                char msg [] = "Inverter off. Reduce load!";
+                lcd.print(msg);
+                int len = size(ofmsg);
+                for(int i = 0; i < len; ++i)
+                {
+                    lcd.scrollDisplayLeft();
+                    delay(500);
+                }
+                delay(100);
+            } while(temperature > = 99);
+        }
 
 }
 

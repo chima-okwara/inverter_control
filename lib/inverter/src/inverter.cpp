@@ -1,12 +1,18 @@
 #include <Arduino.h>
+#include <Buzzer.h>
 #include <inverter.h>
 
 HardwareTimer *timer = new HardwareTimer(TIM2);
+LiquidCrystal_I2C lcd (0x27);
+float voltage {}, current {}, temperature {};
+bool UVP {}, OCP {}, OTP {}, INV {}, BZ {},
+      s1 {}, s2 {}, s3 {}, s4 {};
+
+Buzzer buzzer(buzzerpin);
 
 void setTimer()
 {
     //Configure timer:
-//    timer->setPrescaleFactor(SYSCLOCK / ((1 / 5) - 1));
     timer->setOverflow(5 * 1000000, MICROSEC_FORMAT);
 
     // Attach the interrupt
@@ -20,6 +26,121 @@ void setTimer()
 void timerInterrupt()
 {
     digitalWrite(PC13, !(digitalRead(PC13)));
-    Serial.println("Interrupt!");
 
+    //check battery voltage, current, and system temperature.
+    measureVIT();
+    UVP = (voltage <= VTH) ? true : false;
+    OCP = (current >= ITH) ? true : false;
+    OTP = (temperature >= TTH) ? true : false;
+
+    //set values of BZ and INV, which control the buzzer and inverter
+    INV = (!UVP && !OCP && !OTP) || (over);
+    BZ = (UVP || OCP || OTP);
+
+    digitalWrite(invSw, (INV ? LOW : (over ? LOW : HIGH) ) );
+
+    if(BZ)
+    {
+        buzzer.sound(NOTE_A2, 3);
+    }
+
+    displayVIT();
+
+}
+
+void init()
+{
+    analogReadResolution(12);
+    pinMode(sw1, INPUT_PULLUP);
+    pinMode(sw2, INPUT_PULLUP);
+    pinMode(sw3, INPUT_PULLUP);
+    pinMode(sw4, INPUT_PULLUP);
+
+    pinMode(iSense, INPUT_ANALOG);
+    pinMode(vSense, INPUT_ANALOG);
+    pinMode(tSense, INPUT_ANALOG);
+
+    pinMode(fan, OUTPUT);
+
+
+
+    digitalWrite(invSw, HIGH);  //Turn off inverter
+    //Set LCD:
+    lcd.begin(16, 2);
+    lcd.clear();
+    lcd.backlight();
+
+    lcd.home();
+    lcd.print("****  ****  ****");
+    lcd.setCursor(0, 1);
+    lcd.print("**200W Inverter**");
+    delay(1000);
+    buzzer.sound(NOTE_A2, 1000);
+    setTimer();
+    attachInterrupt(sw1, sw1Pressed, RISING);
+    attachInterrupt(sw2, sw2Pressed, RISING);
+    s1 = false;
+    s2 = false;
+
+    disp();
+}
+
+const float &readCurrent()
+{
+    static float value = (analogRead(iSense) / 4095.0) * 3.3;
+    return (value / 100.0 ); //100 is the sensitivity of the 20A current sensor. Value returned is in Amperes.
+}
+
+const float &readVoltage()
+{
+    static float value = (analogRead(vSense) / 4095.0) * 3.3;
+    return (value * ((R1 + R2) / R2));
+}
+
+const float &readTemperature()
+{
+    static float value = (analogRead(iSense) / 4095.0) * 3.3;
+    return (value * 1000.0) / 10.0; //Where 10 is the sensor gain.
+}
+
+void measureVIT()
+{
+    voltage = readVoltage();
+    current = readCurrent();
+    temperature = readTemperature();
+}
+
+void displayVIT()
+{
+    disp();
+    dtostrf(voltage, 2, 0, volstr);
+    dtostrf(current, 2, 0, curstr);
+    dtostrf(temperature, 2, 0, temstr);
+
+    lcd.setCursor(3, 0);
+    lcd.print(volstr);
+    lcd.setCursor(11, 0);
+    lcd.print(curstr);
+    lcd.setCursor(3, 1);
+    lcd.print(temstr);
+    lcd.setCursor(11, 1);
+    lcd.print( ( (INV) ? "ON" : "OFF" ) );
+}
+
+void sw1Pressed()
+{
+    s1 = true;
+}
+
+void sw2Pressed()
+{
+    s2 = true;
+}
+
+void disp()
+{
+    lcd.clear();
+    lcd.home();
+    lcd.print("Vo:    |Cu:    ");
+    lcd.print("Te:    |St:    ");
 }
