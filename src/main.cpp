@@ -6,18 +6,28 @@
 //*LAST MODIFIED:   Friday, 15 March, 2024
 //*LICENSE:         GNU LGPL v2.1
 ////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
+#include <Arduino.h>
 #include <inverter.h>
-
-
 char volstr[3] { }, curstr[3] { }, temstr[3] { };
 bool over;
+
+LiquidCrystal_I2C lcd (0x27, 16, 2);
 
 void setup()
 {
     //Set pin modes:
+    lcd.init();
+    lcd.clear();
+    lcd.backlight();
+
+    lcd.home();
+    lcd.print("****  ****  ****");
+    lcd.setCursor(0, 1);
+    lcd.print("**200W Inverter**");
+    delay(1000);
     init();
-    Serial.begin(115200);
-    Serial.println("HELLO.");
+//    Serial.begin(115200);
+//    Serial.println("HELLO.");
     digitalWrite(PC13, HIGH);
 
     over = false;
@@ -103,5 +113,3 @@ void loop()
         }
 
 }
-
-

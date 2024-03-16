@@ -9,9 +9,11 @@
 #ifndef __NL_UPS_042__
 #define __NL_UPS_042__
 #include <Arduino.h>
+#include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <HardwareTimer.h>
-#include <Buzzer.h>
+//#include <Buzzer.h>
+//#include <Tone.h>
 
 #define SYSCLOCK 72000000
 
@@ -36,7 +38,7 @@
 
 extern HardwareTimer *timer;
 extern LiquidCrystal_I2C lcd;
-extern Buzzer buzzer;
+//extern Buzzer buzzer;
 extern float voltage, current, temperature;
 extern bool UVP, OCP, OTP, INV, BZ,
             s1, s2, s3, s4,

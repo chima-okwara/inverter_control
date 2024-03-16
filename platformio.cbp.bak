@@ -117,8 +117,6 @@
 		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster/examples/TSL2561Soft/TSL2561Soft.h" />
 		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster_/SoftI2CMaster.cpp" />
 		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster_/SoftI2CMaster.h" />
-		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/src/LiquidCrystal_I2C.cpp" />
-		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/src/LiquidCrystal_I2C.h" />
 		<Unit filename="lib/Low_Power/src/STM32LowPower.cpp" />
 		<Unit filename="lib/Low_Power/src/STM32LowPower.h" />
 		<Unit filename="lib/Low_Power/src/low_power.c">

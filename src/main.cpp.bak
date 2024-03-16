@@ -1,78 +1,106 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//*FILE NAME:       main.cpp
+//*FILE DESC:       Main source file for inverfer_control.
+//*FILE VERSION:    0.1.1
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
 #include <Arduino.h>
-#include <LiquidCrystal_I2C.h>
-#include <HardwareTimer.h>
-
-#define sw1 PA3
-#define sw2 PA4
-#define sw3 PA5
-#define sw4 PA6
-
-#define fan PA15
-#define iSense PA0
-#define vSense PA1
-#define tSense PA2
-#define buzzer PB1
-#define invSw PB5
+#include <inverter.h>
 
 
-//LiquidCrystal_I2C lcd (0x27);
-HardwareTimer *timer = new HardwareTimer(TIM2);
-
-void setup();
-void loop();
-void timerInterrupt();
-
+char volstr[3] { }, curstr[3] { }, temstr[3] { };
+bool over;
 
 void setup()
 {
     //Set pin modes:
-    Serial.begin(115200);
-    Serial.println("HELLO.");
-    HAL_Delay(100);
+    init();
+//    Serial.begin(115200);
+//    Serial.println("HELLO.");
     digitalWrite(PC13, HIGH);
 
-    pinMode(PC13, OUTPUT);
-
-    pinMode(sw1, INPUT);
-    pinMode(sw2, INPUT);
-    pinMode(sw3, INPUT);
-    pinMode(sw4, INPUT);
-
-    pinMode(iSense, INPUT_ANALOG);
-    pinMode(vSense, INPUT_ANALOG);
-    pinMode(tSense, INPUT_ANALOG);
-
-    pinMode(buzzer, OUTPUT);
-    pinMode(fan, OUTPUT);
-
-    digitalWrite(buzzer, 0);
-
-    //Init LCD:
-//    lcd.begin(16, 2);
-
-    //Configure timer:
-    uint32_t prescaler = 72000000 / ((1/5) - 1);
-    timer->setPrescaleFactor(prescaler);
-    timer->setOverflow(5 * 1000000, MICROSEC_FORMAT);
-
-    // Attach the interrupt
-    timer->attachInterrupt(timerInterrupt);
-
-    // Start the timer
-    timer->resume();
-
+    over = false;
 }
 
 
 void loop()
 {
+    if(UVP)
+    {
+        lcd.clear();
+        do
+        {
+            lcd.home();
+            lcd.print("BATTERY LOW!");
+            lcd.setCursor(0, 1);
+            char msg [] = "Inverter off. Press S1 to override.";
+            lcd.print(msg);
+            int len = sizeof(msg);
+            for(int i = 0; i < len; ++i)
+            {
+                lcd.scrollDisplayLeft();
+                delay(500);
+            }
+            delay(100);
+        } while(!s1 && !s2 && UVP);
+        if(s1)
+        {
+            s1 = false;
+            over = true;
+        }
+    }
 
-}
+    if(OCP)
+    {
+        lcd.clear();
+        do
+        {
+            lcd.home();
+            lcd.print("TOO MUCH CURRENT!");
+            lcd.setCursor(0, 1);
+            char msg [] = "Inverter off. Remove load!";
+            lcd.print(msg);
+            int len = sizeof(msg);
+            for(int i = 0; i < len; ++i)
+            {
+                lcd.scrollDisplayLeft();
+                delay(500);
+            }
+            delay(100);
+        } while(!s1 && !s2 && OCP);
+        if(s1 || s2)
+        {
+            s1 = false;
+            s2 = false;
+        }
+    }
 
-void timerInterrupt()
-{
-    digitalWrite(PC13, !(digitalRead(PC13)));
-    HAL_Delay(100);
-    Serial.println("Interrupt!");
+    if(OTP)
+    {
+        analogWriteResolution(12);
+        uint32_t fanspeed = map((long) temperature, 44, 99, 0, 4095);
+        fanspeed = constrain(fanspeed, 500, 4095);
+        analogWrite(fan, fanspeed);
+
+        if(temperature >= 99)
+            do
+            {
+                lcd.clear();
+                lcd.home();
+                lcd.print("SYSTEM TOO HOT");
+                lcd.setCursor(0, 1);
+                char msg [] = "Inverter off. Reduce load!";
+                lcd.print(msg);
+                int len = sizeof(msg);
+                for(int i = 0; i < len; ++i)
+                {
+                    lcd.scrollDisplayLeft();
+                    delay(500);
+                }
+                delay(100);
+            } while(temperature >= 99);
+        }
 
 }

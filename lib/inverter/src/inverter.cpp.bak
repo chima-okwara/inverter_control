@@ -1,27 +1,30 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//*FILE NAME:       main.cpp
-//*FILE DESC:       Source file for Konvei.
+//*FILE NAME:       inverter.cpp
+//*FILE DESC:       Source file for inverfer_control library.
 //*FILE VERSION:    0.1.1
-//*FILE CREATOR:    NorahLinks Technology
-//*LAST MODIFIED:   Friday, 8 February, 2024
-//*LICENSE:         Academic Free License
-////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
-#include <Buzzer.h>
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#include <Arduino.h>
+//#include <Buzzer.h>
 #include <inverter.h>
 
 HardwareTimer *timer = new HardwareTimer(TIM2);
-LiquidCrystal_I2C lcd (0x27);
+
+//LiquidCrystal_I2C lcd (0x27, 16, 2);
+extern LiquidCrystal_I2C lcd;
 float voltage {}, current {}, temperature {};
 bool UVP {}, OCP {}, OTP {}, INV {}, BZ {},
       s1 {}, s2 {}, s3 {}, s4 {};
 
-Buzzer buzzer(buzzerpin);
+//Buzzer buzzer(buzzerpin);
 
 void setTimer()
 {
     //Configure timer:
     timer->setOverflow(5 * 1000000, MICROSEC_FORMAT);
-
+[]
     // Attach the interrupt
     timer->attachInterrupt(timerInterrupt);
 
@@ -48,7 +51,8 @@ void timerInterrupt()
 
     if(BZ)
     {
-        buzzer.sound(NOTE_A2, 3);
+//        buzzer.sound(NOTE_A2, 3);
+        tone(buzzerpin, 10000, 1000);
     }
 
     displayVIT();
@@ -57,11 +61,14 @@ void timerInterrupt()
 
 void init()
 {
+    setTimer();
     analogReadResolution(12);
     pinMode(sw1, INPUT_PULLUP);
     pinMode(sw2, INPUT_PULLUP);
     pinMode(sw3, INPUT_PULLUP);
     pinMode(sw4, INPUT_PULLUP);
+    pinMode(buzzerpin, OUTPUT);
+    analogWrite(buzzerpin, 0);
 
     pinMode(iSense, INPUT_ANALOG);
     pinMode(vSense, INPUT_ANALOG);
@@ -73,17 +80,18 @@ void init()
 
     digitalWrite(invSw, HIGH);  //Turn off inverter
     //Set LCD:
-    lcd.begin(16, 2);
-    lcd.clear();
-    lcd.backlight();
 
-    lcd.home();
-    lcd.print("****  ****  ****");
-    lcd.setCursor(0, 1);
-    lcd.print("**200W Inverter**");
-    delay(1000);
-    buzzer.sound(NOTE_A2, 1000);
-    setTimer();
+
+//    lcd.clear();
+//    lcd.backlight();
+//
+//    lcd.home();
+//    lcd.print("****  ****  ****");
+//    lcd.setCursor(0, 1);
+//    lcd.print("**200W Inverter**");
+//    delay(1000);
+//    buzzer.sound(NOTE_A2, 1000);
+    tone(buzzerpin, 10000, 1000);
     attachInterrupt(sw1, sw1Pressed, RISING);
     attachInterrupt(sw2, sw2Pressed, RISING);
     s1 = false;

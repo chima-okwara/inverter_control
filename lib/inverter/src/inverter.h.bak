@@ -1,9 +1,19 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//*FILE NAME:       inverter.cpp
+//*FILE DESC:       Header file for inverfer_control library.
+//*FILE VERSION:    0.1.1
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////
 #ifndef __NL_UPS_042__
 #define __NL_UPS_042__
 #include <Arduino.h>
+#include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <HardwareTimer.h>
 #include <Buzzer.h>
+#include <Tone.h>
 
 #define SYSCLOCK 72000000
 
