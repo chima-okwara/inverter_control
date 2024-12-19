@@ -7,100 +7,106 @@
 //*LICENSE:         GNU LGPL v2.1
 ////////////////////////////////////////////////////////////////////////////////////////////////////#include <Arduino.h>
 #include <Arduino.h>
-#include <inverter.h>
+#include <LiquidCrystal_I2C.h>
+#define sw1 PA3
+#define sw2 PA4
+#define sw3 PA5
+#define sw4 PA6
 
+#define fan PA15
+#define iSense PA0
+#define vSense PA1
+#define tSense PA2
+#define buzzerpin PB1
+#define invSw PB5
 
-char volstr[3] { }, curstr[3] { }, temstr[3] { };
-bool over;
+#define R1 100000.0
+#define R2 33000.0
 
-void setup()
+#define VTH 10.5
+#define ITH 3
+#define TTH 40
+LiquidCrystal_I2C lcd (0x27, 16, 2);
+
+float current, voltage, temperature;
+char volstr[3], curstr[3], temstr[3];
+
+void disp()
 {
-    //Set pin modes:
-    init();
-//    Serial.begin(115200);
-//    Serial.println("HELLO.");
-    digitalWrite(PC13, HIGH);
+    lcd.clear();
+    lcd.home();
+    lcd.print("Vo:    |Cu:    ");
+    lcd.print("Te:    |St:    ");
+}
 
-    over = false;
+void displayVIT()
+{
+    disp();
+    dtostrf(voltage, 2, 0, volstr);
+    dtostrf(current, 2, 0, curstr);
+    dtostrf(temperature, 2, 0, temstr);
+
+    lcd.setCursor(3, 0);
+    lcd.print(volstr);
+    lcd.setCursor(11, 0);
+    lcd.print(curstr);
+    lcd.setCursor(3, 1);
+    lcd.print(temstr);
+    lcd.setCursor(11, 1);
+//    lcd.print( ( (INV) ? "ON" : "OFF" ) );
+}
+
+float readCurrent()
+{
+    static float value = (analogRead(iSense) / 4095.0) * 3.3;
+    value /= 100.0;
+    return (value); //100 is the sensitivity of the 20A current sensor. Value returned is in Amperes.
+}
+
+float readVoltage()
+{
+    static float value = (analogRead(vSense) / 4095.0) * 3.3;
+    value = value * ((R1 + R2) / R2);
+    return (value);
+}
+
+float readTemperature()
+{
+    static float value = (analogRead(iSense) / 4095.0) * 3.3;
+    value = (value * 1000.0) / 10.0;
+    return value; //Where 10 is the sensor gain.
 }
 
 
+void setup()
+{
+    lcd.init();
+    lcd.clear();
+    lcd.backlight();
+
+    lcd.home();
+    lcd.print("****  ****  ****");
+    lcd.setCursor(0, 1);
+    lcd.print("**200W Inverter**");
+    delay(1000);
+
+    current = 0.0;
+    voltage = 0.0;
+    temperature = 0.0;
+
+
+    pinMode(iSense, INPUT_ANALOG);
+    pinMode(vSense, INPUT_ANALOG);
+    pinMode(tSense, INPUT_ANALOG);
+
+    disp();
+}
+
 void loop()
 {
-    if(UVP)
-    {
-        lcd.clear();
-        do
-        {
-            lcd.home();
-            lcd.print("BATTERY LOW!");
-            lcd.setCursor(0, 1);
-            char msg [] = "Inverter off. Press S1 to override.";
-            lcd.print(msg);
-            int len = sizeof(msg);
-            for(int i = 0; i < len; ++i)
-            {
-                lcd.scrollDisplayLeft();
-                delay(500);
-            }
-            delay(100);
-        } while(!s1 && !s2 && UVP);
-        if(s1)
-        {
-            s1 = false;
-            over = true;
-        }
-    }
-
-    if(OCP)
-    {
-        lcd.clear();
-        do
-        {
-            lcd.home();
-            lcd.print("TOO MUCH CURRENT!");
-            lcd.setCursor(0, 1);
-            char msg [] = "Inverter off. Remove load!";
-            lcd.print(msg);
-            int len = sizeof(msg);
-            for(int i = 0; i < len; ++i)
-            {
-                lcd.scrollDisplayLeft();
-                delay(500);
-            }
-            delay(100);
-        } while(!s1 && !s2 && OCP);
-        if(s1 || s2)
-        {
-            s1 = false;
-            s2 = false;
-        }
-    }
-
-    if(OTP)
-    {
-        analogWriteResolution(12);
-        uint32_t fanspeed = map((long) temperature, 44, 99, 0, 4095);
-        fanspeed = constrain(fanspeed, 500, 4095);
-        analogWrite(fan, fanspeed);
-
-        if(temperature >= 99)
-            do
-            {
-                lcd.clear();
-                lcd.home();
-                lcd.print("SYSTEM TOO HOT");
-                lcd.setCursor(0, 1);
-                char msg [] = "Inverter off. Reduce load!";
-                lcd.print(msg);
-                int len = sizeof(msg);
-                for(int i = 0; i < len; ++i)
-                {
-                    lcd.scrollDisplayLeft();
-                    delay(500);
-                }
-                delay(100);
-            } while(temperature >= 99);
-        }
-
+    current = readCurrent();
+    voltage = readVoltage();
+    temperature = readTemperature();
+    displayVIT();
+    delay(500);
 }

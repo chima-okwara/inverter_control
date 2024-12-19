@@ -10,13 +10,12 @@
 //#include <Buzzer.h>
 #include <inverter.h>
 
-HardwareTimer *timer = new HardwareTimer(TIM2);
-
-//LiquidCrystal_I2C lcd (0x27, 16, 2);
-extern LiquidCrystal_I2C lcd;
-float voltage {}, current {}, temperature {};
-bool UVP {}, OCP {}, OTP {}, INV {}, BZ {},
-      s1 {}, s2 {}, s3 {}, s4 {};
+//HardwareTimer *timer = new HardwareTimer(TIM2);
+//
+////LiquidCrystal_I2C lcd (0x27, 16, 2);
+//volatile float voltage {}, current {}, temperature {};
+//volatile bool UVP {}, OCP {}, OTP {}, INV {}, BZ {},
+//      s1 {}, s2 {}, s3 {}, s4 {};
 
 //Buzzer buzzer(buzzerpin);
 
@@ -24,7 +23,7 @@ void setTimer()
 {
     //Configure timer:
     timer->setOverflow(5 * 1000000, MICROSEC_FORMAT);
-[]
+
     // Attach the interrupt
     timer->attachInterrupt(timerInterrupt);
 
@@ -82,11 +81,13 @@ void init()
     //Set LCD:
 
 
-//    lcd.clear();
+    lcd.clear();
 //    lcd.backlight();
 //
-//    lcd.home();
-//    lcd.print("****  ****  ****");
+    lcd.home();
+    lcd.print("Init Done.");
+    delay(500);
+    lcd.clear();
 //    lcd.setCursor(0, 1);
 //    lcd.print("**200W Inverter**");
 //    delay(1000);
@@ -103,19 +104,22 @@ void init()
 const float &readCurrent()
 {
     static float value = (analogRead(iSense) / 4095.0) * 3.3;
-    return (value / 100.0 ); //100 is the sensitivity of the 20A current sensor. Value returned is in Amperes.
+    value /= 100.0;
+    return (value); //100 is the sensitivity of the 20A current sensor. Value returned is in Amperes.
 }
 
 const float &readVoltage()
 {
     static float value = (analogRead(vSense) / 4095.0) * 3.3;
-    return (value * ((R1 + R2) / R2));
+    value = value * ((R1 + R2) / R2);
+    return (value);
 }
 
 const float &readTemperature()
 {
     static float value = (analogRead(iSense) / 4095.0) * 3.3;
-    return (value * 1000.0) / 10.0; //Where 10 is the sensor gain.
+    value = (value * 1000.0) / 10.0;
+    return value; //Where 10 is the sensor gain.
 }
 
 void measureVIT()

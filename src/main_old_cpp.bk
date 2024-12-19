@@ -1,0 +1,129 @@
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//*FILE NAME:       main.cpp
+//*FILE DESC:       Main source file for inverfer_control.
+//*FILE VERSION:    0.1.1
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#include <Arduino.h>
+#include <inverter.h>
+const int pwr = sw1;
+LiquidCrystal_I2C lcd(0x27);
+float voltage {}, current {}, temperature {}, power{};
+volatile bool UVP {}, OCP {}, OTP {}, INV {}, BZ {},
+      s1 {}, s2 {}, s3 {}, s4 {},
+      sleep {};
+char volstr [5] {}, curstr [5] {}, temstr [5] {};
+
+
+void setup()
+{
+//    Serial.begin(115200);
+    lcd.begin(16, 2);
+    lcd.on();
+    lcd.clear();
+    lcd.backlight();
+
+    lcd.home();
+//    Serial.println("Started Inverter");
+    lcd.print("****  xRIS  ****");
+    lcd.setCursor(0, 1);
+    lcd.print("**300W Inverter**");
+    delay(1500);
+
+    current = 0.0;
+    voltage = 0.0;
+    temperature = 0.0;
+
+    //INPUT PINS:
+    pinMode(iSense, INPUT_ANALOG);
+    pinMode(vSense, INPUT_ANALOG);
+    pinMode(tSense, INPUT_ANALOG);
+    pinMode(sw1, INPUT_PULLUP);
+
+    //OUTPUT PINS:
+    pinMode(buzzerpin, OUTPUT);
+    pinMode(invSw, OUTPUT);
+    pinMode(fan, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
+
+
+    attachInterrupt(digitalPinToInterrupt(sw1), toggleSleep, RISING);
+
+    LowPower.begin();
+    LowPower.a
+    LowPower.attachInterruptWakeup(pwr, wkUpFn, FALLING, SLEEP_MODE);
+
+    digitalWrite(invSw, LOW);
+    analogWriteResolution(8);
+    analogWrite(fan, 0);
+    analogWrite(buzzerpin, 255);
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1500);
+
+    digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(invSw, HIGH);
+    analogWrite(fan, 255);
+    analogWrite(buzzerpin, 0);
+
+    delay(1500);
+
+    disp();
+}
+
+void loop()
+{
+
+        fCheck();
+        lcd.on();
+
+
+        if(UVP)
+        {
+            lcd.clear();
+            analogWrite(buzzerpin, 150);
+            delay(1000);
+            lcd.home();
+            lcd.print("BATTERY TOO");
+            lcd.setCursor(0, 1);
+            lcd.print("LOW!");
+            delay(200);
+        }
+
+//        else if(OCP)
+//        {
+//            lcd.clear();
+//            analogWrite(buzzerpin, 150);
+//            delay(1000);
+//            lcd.home();
+//            lcd.print("OVERLOAD");
+//            lcd.setCursor(0, 1);
+//            lcd.print("     DETECTED!!!");
+//            delay(200);
+//        }
+//
+//        else if(OTP)
+//        {
+//            lcd.clear();
+//            analogWrite(buzzerpin, 150);
+//            delay(1000);
+//            lcd.home();
+//            lcd.print("DEVICE TOO");
+//            lcd.setCursor(0, 1);
+//            lcd.print("     HOT!!!");
+//            delay(200);
+//        }
+
+        else
+        {
+            displayVIT();
+        }
+
+    //    Serial.println("Voltage: %d | Current: %d | Temperature: %d |");
+
+        digitalWrite(LED_BUILTIN, !(digitalRead(LED_BUILTIN)));
+        delay(2000);
+}
+

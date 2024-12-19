@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="inverter_control" />
+		<Option title="NL_052_UPS" />
 		<Option makefile_is_custom="1" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
@@ -49,19 +49,22 @@
 		<Compiler>
 			<Add option="-DPLATFORMIO=60113" />
 			<Add option="-DSTM32F1" />
-			<Add option="-DSTM32F103x6" />
-			<Add option="-DARDUINO_BLUEPILL_F103C6" />
+			<Add option="-DSTM32F103xB" />
 			<Add option="-DSTM32F1xx" />
 			<Add option="-DARDUINO=10808" />
 			<Add option="-DARDUINO_ARCH_STM32" />
 			<Add option="-DNDEBUG" />
-			<Add option='-DBOARD_NAME=&quot;BLUEPILL_F103C6&quot;' />
+			<Add option="-DARDUINO_BLUEPILL_F103C8" />
+			<Add option='-DBOARD_NAME=&quot;BLUEPILL_F103C8&quot;' />
 			<Add option="-DHAL_UART_MODULE_ENABLED" />
 			<Add option="-DUSE_FULL_LL_DRIVER" />
-			<Add option='-DVARIANT_H=&quot;variant_BLUEPILL_F103C6.h&quot;' />
+			<Add option='-DVARIANT_H=&quot;variant_PILL_F103Cx.h&quot;' />
 			<Add option="-DVECT_TAB_OFFSET=0x0" />
-			<Add directory="/home/chima/GitHub/inverter_control/include" />
-			<Add directory="/home/chima/GitHub/inverter_control/src" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/include" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/src" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/lib/inverter/src" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/lib/LiquidCrystal_I2C-1.1.2" />
+			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/Wire/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/cores/arduino/avr" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/cores/arduino/stm32" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/cores/arduino/stm32/LL" />
@@ -84,7 +87,9 @@
 			<Add directory="/home/chima/.platformio/packages/framework-cmsis/CMSIS/DSP/Include" />
 			<Add directory="/home/chima/.platformio/packages/framework-cmsis/CMSIS/DSP/PrivateInclude" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/cores/arduino" />
-			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103C4T_F103C6(T-U)" />
+			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103C8T_F103CB(T-U)" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/lib/Low_Power/src" />
+			<Add directory="/home/chima/Documents/PlatformIO/Projects/NL_052_UPS/lib/STM32RTC-1.4.0/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/CMSIS_DSP/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/EEPROM/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/IWatchdog/src" />
@@ -96,45 +101,29 @@
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/SoftwareSerial/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/SrcWrapper/src" />
 			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/SubGhz/src" />
-			<Add directory="/home/chima/.platformio/packages/framework-arduinoststm32/libraries/Wire/src" />
 			<Add directory="/home/chima/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/12.3.1" />
 			<Add directory="/home/chima/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include/c++/12.3.1/arm-none-eabi" />
 			<Add directory="/home/chima/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/12.3.1/include" />
 			<Add directory="/home/chima/.platformio/packages/toolchain-gccarmnoneeabi/lib/gcc/arm-none-eabi/12.3.1/include-fixed" />
 			<Add directory="/home/chima/.platformio/packages/toolchain-gccarmnoneeabi/arm-none-eabi/include" />
 		</Compiler>
-		<Unit filename="lib/LCD/src/FastIO.cpp" />
-		<Unit filename="lib/LCD/src/FastIO.h" />
-		<Unit filename="lib/LCD/src/I2CIO.cpp" />
-		<Unit filename="lib/LCD/src/I2CIO.h" />
-		<Unit filename="lib/LCD/src/LCD.cpp" />
-		<Unit filename="lib/LCD/src/LCD.h" />
-		<Unit filename="lib/LCD/src/LiquidCrystal.cpp" />
-		<Unit filename="lib/LCD/src/LiquidCrystal.h" />
-		<Unit filename="lib/LCD/src/LiquidCrystal_I2C.cpp" />
-		<Unit filename="lib/LCD/src/LiquidCrystal_I2C.h" />
-		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster/SoftI2CMaster.h" />
-		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster/examples/TSL2561Soft/TSL2561Soft.h" />
-		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster_/SoftI2CMaster.cpp" />
-		<Unit filename="lib/LCD/thirdparty libraries/SoftI2CMaster_/SoftI2CMaster.h" />
+		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/LiquidCrystal_I2C.cpp" />
+		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/LiquidCrystal_I2C.h" />
 		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/src/LiquidCrystal_I2C.cpp" />
 		<Unit filename="lib/LiquidCrystal_I2C-1.1.2/src/LiquidCrystal_I2C.h" />
-		<Unit filename="lib/Low_Power/src/STM32LowPower.cpp" />
-		<Unit filename="lib/Low_Power/src/STM32LowPower.h" />
-		<Unit filename="lib/Low_Power/src/low_power.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lib/Low_Power/src/low_power.h" />
-		<Unit filename="lib/STM32RTC/src/STM32RTC.cpp" />
-		<Unit filename="lib/STM32RTC/src/STM32RTC.h" />
-		<Unit filename="lib/STM32RTC/src/rtc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lib/STM32RTC/src/rtc.h" />
+		<Unit filename="lib/eichen_lib/src/eichen_lib.cpp" />
+		<Unit filename="lib/eichen_lib/src/eichen_lib.h" />
 		<Unit filename="lib/inverter/src/inverter.cpp" />
 		<Unit filename="lib/inverter/src/inverter.h" />
 		<Unit filename="platformio.ini" />
+		<Unit filename="src/code_bkp" />
+		<Unit filename="src/code_bkp.save" />
 		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main.cpp.bak" />
+		<Unit filename="src/main.cpp.save" />
+		<Unit filename="src/main_old_cpp.bk" />
+		<Unit filename="src/mainbk.bak" />
+		<Unit filename="src/src_bkp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

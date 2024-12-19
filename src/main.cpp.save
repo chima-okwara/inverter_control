@@ -1,101 +1,118 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//*FILE NAME:       main.cpp
+//*FILE DESC:       Main source file for inverfer_control.
+//*FILE VERSION:    0.1.1
+//*FILE AUTHOR:     Chimaroke Okwara (chima-okwara)
+//*LAST MODIFIED:   Friday, 15 March, 2024
+//*LICENSE:         GNU LGPL v2.1
+////////////////////////////////////////////////////////////////////////////////////////////////////
 #include <Arduino.h>
 #include <inverter.h>
 
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char volstr[3] { }, curstr[3] { }, temstr[3] { };
-bool over;
+float voltage {}, current {}, temperature {}, power{}, val { }, actualVal { };
+bool UVP {}, OVP {}, OLP {}, OCP {}, OTP {}, INV {}, BZ {},
+      s1 {}, s2 {}, s3 {}, s4 {}, invt {},
+      sleep {};
+
+
+float average[AVG] { }, valueAverage { }, sum { }, avg { };
+uint32_t value { };
+
 
 void setup()
 {
-    //Set pin modes:
-    init();
-    Serial.begin(115200);
-    Serial.println("HELLO.");
-    digitalWrite(PC13, HIGH);
+    pinMode(iSense, INPUT_ANALOG);
+    pinMode(vSense, INPUT_ANALOG);
+    pinMode(tSense, INPUT_ANALOG);
 
-    disp();
-    over = false;
+    pinMode(sw1, INPUT_PULLUP);
+    pinMode(sw2, INPUT_PULLUP);
+
+    //OUTPUT PINS:
+    pinMode(buzzerpin, OUTPUT);
+    analogWrite(buzzerpin, buzOff);
+
+    pinMode(invSw, OUTPUT);
+    digitalWrite(invSw, invOff);
+
+    pinMode(fan, OUTPUT);
+    digitalWrite(fan, fanOff);
+
+    pinMode(LED_BUILTIN, OUTPUT);
+    digitalWrite(LED_BUILTIN, LOW);
+
+    attachInterrupt(digitalPinToInterrupt(sw1), sw1press, RISING);
+    attachInterrupt(digitalPinToInterrupt(sw2), sw2press, FALLING);
+
+
+
+    lcd.init();
+    lcd.backlight();
+
+    printWlc();
+    delay(1500);
+
+    current = 0.0;
+    voltage = 0.0;
+    temperature = 0.0;
+
+
+    analogReadResolution(12);
+    analogWriteResolution(8);
+
+    //Turn OUTPUTS on
+    digitalWrite(fan, fanOn);
+    analogWrite(buzzerpin, buzOn);
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(1500);
+
+    //Turn OUTPUTS off
+    digitalWrite(LED_BUILTIN, LOW);
+    digitalWrite(invSw, invOff);
+    digitalWrite(fan, fanOff);
+    analogWrite(buzzerpin, buzOff);
+    delay(1500);
+
+    lcd.clear();
+    lcd.home();
+    lcd.print("------Press INV");
+    lcd.setCursor(0, 1);
+    lcd.print("to Start.------");
+    delay(1000);
+    while(!s1)
+    {
+        delay(100);
+    }
 }
-
 
 void loop()
 {
-    if(UVP)
-    {
-        lcd.clear();
-        do
-        {
-            lcd.home();
-            lcd.print("BATTERY LOW!");
-            lcd.setCursor(0, 1);
-            char msg [] = "Inverter off. Press S1 to override.";
-            lcd.print(msg);
-            int len = size(msg);
-            for(int i = 0; i < len; ++i)
-            {
-                lcd.scrollDisplayLeft();
-                delay(500);
-            }
-            delay(100);
-        } while(!s1 && !s2 && UVP);
-        if(s1)
-        {
-            s1 = false;
-            over = true;
-        }
-    }
+        s2 = false;
+        fCheck();
 
-    if(OCP)
-    {
-        lcd.clear();
-        do
+        if(INV)
+            invT();
+        else
         {
-            lcd.home();
-            lcd.print("TOO MUCH CURRENT!");
-            lcd.setCursor(0, 1);
-            char msg [] = "Inverter off. Remove load!";
-            lcd.print(msg);
-            int len = size(msg);
-            for(int i = 0; i < len; ++i)
-            {
-                lcd.scrollDisplayLeft();
-                delay(500);
-            }
-            delay(100);
-        } while(!s1 && !s2 && OCP);
-        if(s1 || s2)
-        {
-            s1 = false;
-            s2 = false;
-        }
-    }
-
-    if(OTP)
-    {
-        analogWriteResolution(12);
-        uint32_t fanspeed = map((long) temperature, 44, 99, 0, 4095);
-        fanspeed = constrain(fanspeed, 500, 4095);
-        analogWrite(fan, fanspeed);
-
-        if(temperature >= 99)
-            do
+            if(s2)
             {
                 lcd.clear();
                 lcd.home();
-                lcd.print("SYSTEM TOO HOT");
-                lcd.setCursor(0, 1);
-                char msg [] = "Inverter off. Reduce load!";
-                lcd.print(msg);
-                int len = size(ofmsg);
-                for(int i = 0; i < len; ++i)
-                {
-                    lcd.scrollDisplayLeft();
-                    delay(500);
-                }
-                delay(100);
-            } while(temperature > = 99);
+                lcd.print("Override Mode");
+                delay(1000);
+                invT();
+            }
+
+            else
+                invF();
         }
 
+        delayMicroseconds(10);
+
+    //    Serial.println("Voltage: %d | Current: %d | Temperature: %d |");
+
+        digitalWrite(LED_BUILTIN, !(digitalRead(LED_BUILTIN)));
+        delayMicroseconds(200);
 }
-
-
