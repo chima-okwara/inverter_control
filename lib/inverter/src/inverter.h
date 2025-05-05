@@ -14,7 +14,10 @@
 #include <eichen_lib.h>
 
 
-#define RATING 400
+#define RATING 1000
+#define NomVoltage 11.08
+#define IMAX 85.0
+#define PMAX (NomVoltage*IMAX)
 
 #define sw1 PA3
 #define sw2 PA4
@@ -38,18 +41,23 @@
 
 #define R1 100000.0
 #define R2 319453.924
-#define RSHUNT 0.02
+
+//Op amp current sensor:
+#define R4 10000.0
+#define R3 120.0
+#define GAIN (R4/R3)+1.0
+#define RSHUNT 800e-6
 
 #define VTH 9.55
 #define ITH IMAX
-#define TTH 40
+#define TTH 40.0
 
 #define VMAX 15.5
-#define VDIVMAX 16000
-#define IMAX 35
+#define VDIVMAX 16500
+
+
 #define MAXCURRENT (IMAX*1000)
 #define MAXVOLTAGE (VMAX*1000)
-#define PMAX (VMAX*IMAX)
 #define ISENSE_FACTOR  66
 
 

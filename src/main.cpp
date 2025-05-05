@@ -87,11 +87,12 @@ void setup()
     {
         delay(100);
     }
+
+    s1 = s2 = false;
 }
 
 void loop()
 {
-        s2 = false;
         fCheck();
 
         if(INV)

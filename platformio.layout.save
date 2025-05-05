@@ -2,15 +2,20 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="lib/inverter/src/inverter.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib/inverter/src/inverter.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1086" topLine="36" />
+			<Cursor1 position="3461" topLine="161" />
 		</Cursor>
 	</File>
-	<File name="lib/inverter/src/inverter.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2169" topLine="74" />
+			<Cursor1 position="222" topLine="12" />
 		</Cursor>
 	</File>
-	<EditorTabsLayout layout="580281806763ccd500ad4d3800000002=0;NL_052_UPS:lib/inverter/src/inverter.h,*1;NL_052_UPS:lib/inverter/src/inverter.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=467;besth=161;minw=467;minh=161;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=580281806763ccd500ad4d3800000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
+	<File name="lib/inverter/src/inverter.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1149" topLine="36" />
+		</Cursor>
+	</File>
+	<EditorTabsLayout layout="00027a806768a3f300c8fe4700000002=0;NL_052_UPS:src/main.cpp,*1;NL_052_UPS:lib/inverter/src/inverter.h,2;NL_052_UPS:lib/inverter/src/inverter.cpp@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=467;besth=161;minw=467;minh=161;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=00027a806768a3f300c8fe4700000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>

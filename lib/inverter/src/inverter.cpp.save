@@ -95,6 +95,7 @@ void displayVIT()
     lcd.print(voltage, 2);
     lcd.setCursor(12, 0);
     lcd.print(batPer);
+    lcd.print('%');
     lcd.setCursor(3, 1);
     lcd.print(temperature, 2);
     lcd.setCursor(11, 1);
@@ -111,10 +112,14 @@ void readCurrent()
     actualVal = 0.0;
     current = 0.0;
 
+
+
     float maxVoltage = (IMAX * RSHUNT) * 1000;
 
     val = readVoltage(iSense, 0, 3300);
-    long temp = map(val, 0, 3300, 0, long(maxVoltage));
+    convToBase(&val);
+    current = val
+
     actualVal = float(temp);
 
     convToBase(&actualVal);
